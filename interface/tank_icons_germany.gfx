@@ -1,0 +1,253 @@
+spriteTypes = {	
+
+	###
+	SpriteType = {
+		name = "GFX_GER_gwtank_medium"
+		texturefile = "gfx/interface/technologies/GER_INT.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_LT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/GER_LT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_LT1_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_GER_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/GER_LT1_SPG.dds"
+	}
+	###
+	SpriteType = {
+		name = "GFX_GER_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_LT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/GER_LT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_LT1_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_GER_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/GER_LT2_SPG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_LT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/GER_LT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/GER_LT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_LT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_MT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/GER_MT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/GER_MT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/GER_MT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/GER_MT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_MT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/GER_MT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/GER_MT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_MT3_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_MT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_modern_td_medium"
+		texturefile = "gfx/interface/technologies/GER_MT_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_modern_art_medium"
+		texturefile = "gfx/interface/technologies/GER_MT_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_MT_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_HT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/GER_HT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/GER_HT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_HT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/GER_HT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/GER_HT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_HT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_HT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/GER_HT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/GER_HT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ITA_SH_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GER_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_super_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/GER_SH_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/GER_SH_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_super_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/GER_SH_SPAAG.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/GER_AMP.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/GER_AMP2.dds"
+	}
+	
+									SpriteType = {
+		name = "GFX_GER_airborne_tank_medium"
+		texturefile = "gfx/interface/technologies/AXIS_ATT.dds"
+	}
+}

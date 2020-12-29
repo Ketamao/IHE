@@ -1,0 +1,198 @@
+﻿division_template = {
+	name = "1 DIV TRAIN"		
+	division_names_group = ENG_INF_01
+    template_counter = 0
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
+		infantry = { x = 4 y = 4 }
+	}
+	support = {
+       	
+	}
+}
+division_template = {
+	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+	division_names_group = CHI_INF_01
+    template_counter = 105									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }		
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	division_names_group = CHI_INF_01
+    template_counter = 106
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }		
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }		
+	}
+}
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = CHI_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }		
+	}
+}
+
+### OOB ###
+units = {
+	division= {	# "1st Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6999
+		division_template = "1 DIV TRAIN"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.01
+	}
+}
+
+air_wings = {
+# Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
+	# Beijing
+	608 = { 
+		cv_CAS_equipment_1 = {
+			owner = "CHI" 
+			amount = 12
+		}
+		CAS_equipment_1 =  {
+			owner = "CHI" 
+			amount = 25
+		}		
+		fighter_equipment_1 = { owner = "CHI" amount = 24 }				# 3rd PG - Fiat CR.32
+	}
+	#Shanghai
+	608 = {
+		fighter_equipment_0 = { owner = "CHI" amount = 100 } 		# 4th PF, 5th PG, 9th PS - Curtiss Hawk
+		tac_bomber_equipment_0 =  { owner = "CHI" amount = 60 }		# Combined BG -- Martin 139WC, Savoia S.72
+		cv_fighter_equipment_0 = {
+			owner = "CHI" 
+			amount = 50
+		}
+	}
+	608 = {
+		fighter_equipment_1 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_1 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_0 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_0 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_0 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_1 =  {
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_1 =  {
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_1 =  {
+				owner = "CHI" 
+				amount = 70
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_0 =  {
+				owner = "CHI" 
+				amount = 30
+				creator = "SWI"	
+			}			
+	}	
+}	
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 53500 }	
+    add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 6500 producer = GER }
+	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 31500 }
+	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 51500 producer = SOV }	
+	add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 producer = FRA }
+	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1750 }
+	add_equipment_to_stockpile = { type = support_equipment_1 amount = 1800 }
+	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 }	
+	add_equipment_to_stockpile = { type = gw_tank_equipment amount = 20 }
+	add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 10 }
+	add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 80 producer = SOV }	
+	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 20 }
+	add_equipment_to_stockpile = { type = gw_armored_car_equipment amount = 15 }	
+}

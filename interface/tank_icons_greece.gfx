@@ -1,0 +1,252 @@
+spriteTypes = {	
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_gwtank_medium"
+		texturefile = "gfx/interface/technologies/NEP_INT.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/NZL_LT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/NZL_LT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/NZL_LT1_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_GRE_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/NZL_LT1.dds"
+	}
+	###
+	SpriteType = {
+		name = "GFX_GRE_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/NEP_LT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/NEP_LT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/NZL_LT2_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_GRE_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/NEP_LT2.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_LT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/NZL_LT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_LT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_LT3_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/GRE_MT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/NZL_MT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/NEP_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/NEP_MT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/NEP_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/NEP_MT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GRE_modern_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_modern_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/NZL_HT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_basic_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/CAN_HT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/AST_HT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_improved_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_advanced_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_GRE_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_super_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_SH_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_SH_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_super_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_SPAAG.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_AMP1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/CAN_AMP2.dds"
+	}
+			SpriteType = {
+		name = "GFX_GRE_airborne_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_ATT.dds"
+	}
+}

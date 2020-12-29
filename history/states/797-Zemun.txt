@@ -1,0 +1,26 @@
+
+state={
+	id=797
+	name="STATE_797" # Zemun
+	manpower = 287000
+	
+	state_category = large_town
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = YUG
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+
+	provinces={
+		11577 11580
+	}
+	buildings_max_level_factor=0.600
+}

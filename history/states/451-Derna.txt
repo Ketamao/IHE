@@ -1,0 +1,34 @@
+
+state={
+	id=451
+	name="STATE_451"
+
+	history={
+		owner = ITA
+		victory_points = {
+			1130 25 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 4
+			1130 = {
+				naval_base = 6
+
+			}
+
+
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		1130 1204 4136 7082 9992 10120 
+	}
+	manpower=45628
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

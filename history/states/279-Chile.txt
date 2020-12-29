@@ -1,0 +1,17 @@
+
+state={
+	id=279
+	name="STATE_279" # 	
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = SWI
+
+	}
+
+
+	provinces={
+		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
+	}
+}

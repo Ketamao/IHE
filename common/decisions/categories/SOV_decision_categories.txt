@@ -1,0 +1,133 @@
+################
+#### SOVIET ####
+################
+
+SOV_industry_relocation = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_industry_relocation_moscow = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+        has_completed_focus = SOV_defense_of_moscow
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_industry_relocation_leningrad = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+        has_completed_focus = SOV_defense_of_leningrad
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_industry_relocation_crimea = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+        has_completed_focus = SOV_defense_of_crimea
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_industry_relocation_russia = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+        has_completed_focus = SOV_defense_of_centra_russia
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_industry_relocation_urakine = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+        has_completed_focus = SOV_defense_of_western_urakine
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_great_patriotic_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}
+
+SOV_mrp = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+
+	}
+		
+}
+
+SOV_purge = {
+	allowed = {
+		original_tag = SOV
+	}
+	
+	
+	
+	visible = {
+	NOT = { SOV = { has_completed_focus = SOV_great_purge }}
+		SOV = { has_completed_focus = SOV_collectivist_propaganda }
+
+	}
+		
+}

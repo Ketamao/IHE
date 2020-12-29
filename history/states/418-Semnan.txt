@@ -1,0 +1,22 @@
+
+state={
+	id=418
+	name="STATE_418"
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWI
+
+	}
+
+	provinces={
+		1888 5073 8009 10806 10873 12704 12748 
+	}
+	manpower=332362
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

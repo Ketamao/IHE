@@ -1,0 +1,14 @@
+
+state={
+	id=347
+	name="STATE_347"
+	manpower = 1
+	state_category = rural
+	history={
+		owner = SWI
+	}
+
+	provinces={
+		890 904 3905 3919 6871 11811 11866 11883 
+	}
+}

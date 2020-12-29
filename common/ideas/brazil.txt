@@ -1,0 +1,771 @@
+ideas = {
+	country = {
+			BRA_Economic_Nationalism = {
+
+			picture = branationalism
+
+			allowed = {
+			original_tag = "BRA"
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+		BRAAF = {
+		           
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+			
+			picture = braaf
+            
+			research_bonus = {
+				air_doctrine = 0.50
+			}
+		}		
+		
+		BRA_autarky = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = braconscturction
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+			BRA_Army_for_Internal_Security = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = braarmy
+			
+			research_bonus = {
+				land_doctrine = -0.55
+			}
+			modifier = {
+				mobilization_speed = -0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+			BRA_Army_for_Internal_Security_II = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = braarmy
+			research_bonus = {
+				land_doctrine = -0.45
+			}
+			modifier = {
+				mobilization_speed = -0.3
+				production_speed_arms_factory_factor = -0.25
+			}
+		}
+			BRA_Army_for_Internal_Security_III = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = braarmy
+			
+			research_bonus = {
+				land_doctrine = -0.30
+			}
+			modifier = {
+				mobilization_speed = -0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+			BRA_Army_for_Internal_Security_IV = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = braarmy
+			research_bonus = {
+				land_doctrine = -0.15
+			}			
+			modifier = {
+				mobilization_speed = -0.2
+				production_speed_arms_factory_factor = -0.10
+			}
+		}
+			BRA_Vargas_power = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+			BRA_Germany_Brazil = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			available = { has_war = no }
+			
+			removal_cost = -1
+
+			picture = braconstruction2
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+			BRA_One_Party_System = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+			BRA_USA_influence = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = brausainfluence
+			
+			modifier = {
+				democratic_acceptance = 100
+			}
+		}
+			Father_of_the_poor = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = eng_tackle_capitalism
+			
+			modifier = {
+			stability_weekly = 0.0025
+			war_support_weekly = 0.0025
+			}
+		}
+			Lacking_military_expenses = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = prc_low_popular_support
+			
+			modifier = {
+			conscription_factor = -0.75
+			}
+		}
+			Lacking_military_expenses_II = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+			
+			modifier = {
+			conscription_factor = -0.50
+			}
+		}
+			Lacking_military_expenses_III = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+			
+			modifier = {
+			conscription_factor = -0.25
+			}
+		}
+			Unexperienced_army = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			modifier = {
+			army_org_factor = -0.15
+			defence = -0.1
+			offence = -0.1
+			}
+		}
+		Specilized_force = {
+			
+			allowed = {
+				original_tag = BRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = smoking_cobra
+			
+			modifier = {
+			special_forces_min = 90
+			special_forces_training_time_factor = -0.2
+			}
+		}
+	}
+	political_advisor = {
+
+		BRA_washington_luis_pereira = {
+
+			picture = generic_political_advisor_south_america_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		BRA_osvaldo_aranha = {
+
+			picture = generic_political_advisor_south_america_2
+				
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		BRA_afranio_de_mello_franco = {
+
+			picture = generic_political_advisor_south_america_3
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { popular_figurehead }
+		}
+		BRA_random_guy_5 = {
+
+			picture = generic_political_advisor_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { war_industrialist }
+		}
+		BRA_random_guy_6 = {
+
+			picture = generic_political_advisor_south_america_3
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+
+	theorist = {
+
+		BRA_newton_cavalcanti = {
+			ledger = army
+			
+			picture = generic_army_south_america_1
+
+			allowed = {
+				original_tag = BRA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+
+		BRA_eduardo_gomes = {
+			ledger = air		
+			picture = generic_political_advisor_south_america_1
+				
+			allowed = {
+				original_tag = BRA
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	high_command = {
+		BRA_epaminondas_dos_santos = {
+            ledger = air
+			picture = generic_air_south_america_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_agliberto_vieira = {
+            ledger = navy
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_artur_da_costa_e_silva = {
+            ledger = army
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_moreira_lima = {
+            ledger = air
+			picture = generic_air_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BRA_random_guy_2 = {
+			ledger = army
+			picture = generic_army_south_america_3
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BRA_random_guy_3 = {
+			ledger = army
+			picture = generic_fortification_engineer_south_american_2d
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BRA_random_guy_4 = {
+			ledger = army
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BRA_random_guy_7 = {
+			ledger = army
+			picture = generic_army_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_commando_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		BRA_american_mexican_tanks = {
+
+			picture = chrysler
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			available = {
+
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_marmon_herrington = {
+			picture = marmon_herrington
+			
+			allowed = {
+				original_tag = BRA
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { pacific_light_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		BRA_ford_tank_department = {
+			picture = ford_motor_company
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}			
+	}
+
+	aircraft_manufacturer = { 
+
+		bra_hawker = {
+			picture = hawker
+			allowed = {
+				original_TAG = BRA
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer } 
+			
+			modifier = {
+			}
+		}
+
+ }	
+	
+	# MILITARY
+	army_chief = {
+
+		BRA_joao_neves_da_fontoura = {
+			
+			picture = generic_army_south_america_5
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+			BRA_random_guy_1 = {
+			
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_chief_offensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_nero_fiuza_de_castro = {
+			
+			picture = generic_army_south_america_3
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+
+		BRA_salgado_filho = {
+			
+			picture = generic_air_south_america_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_ismael_motta_paes = {
+			
+			picture = generic_air_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		BRA_aristides_guilhem = {
+			
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_jorge_martins = {
+			
+			picture = generic_navy_south_america_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BRA_floriano_peixoto = {
+			
+			picture = generic_navy_south_america_3
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	
+}

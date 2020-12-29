@@ -1,0 +1,31 @@
+state={
+	id=108
+	name="STATE_108"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		victory_points = {
+			9602 3
+		}
+		owner = YUG
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = YUG
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		9849 6940 9874 833 867
+	}
+	manpower=533000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

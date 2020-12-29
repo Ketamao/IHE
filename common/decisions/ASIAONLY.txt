@@ -1,0 +1,780 @@
+asia_only_decisions = {
+
+ 		unlock_mobile_warfare_left = {
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { mobile_warfare = 1 }
+				set_technology = { delay = 1 }
+				set_technology = { elastic_defence = 1 }
+                set_technology = { mobile_infantry = 1 }
+				set_technology = { mass_motorization = 1 }
+				set_technology = { mechanised_offensive = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+		
+ 		unlock_mobile_warfare_right = {
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1			
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { mobile_warfare = 1 }
+				set_technology = { delay = 1 }
+				set_technology = { elastic_defence = 1 }
+                set_technology = { armored_spearhead = 1 }
+				set_technology = { schwerpunk = 1 }
+				set_technology = { blitzkrieg = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+
+ 		unlock_superior_firepower_left = {
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1			
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { superior_firepower = 1 }
+				set_technology = { sup_delay = 1 }
+				set_technology = { mobile_defence = 1 }
+                set_technology = { dispersed_support = 1 }
+				set_technology = { overwhelming_firepower = 1 }
+				set_technology = { sup_mechanized_offensive = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+
+ 		unlock_superior_firepower_right = {
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1			
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { superior_firepower = 1 }
+				set_technology = { sup_delay = 1 }
+				set_technology = { mobile_defence = 1 }
+                set_technology = { intergrated_support  = 1 }
+				set_technology = { regimental_combat_teams = 1 }
+				set_technology = { sup_mechanized_offensive = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+
+ 		unlock_GBP_left = {
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { trench_warfare = 1 }
+				set_technology = { grand_battle_plan = 1 }
+				set_technology = { prepared_defense = 1 }
+                set_technology = { grand_assault = 1 }
+				set_technology = { grand_mechanized_offensive = 1 }
+				set_technology = { assault_concentration = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+
+ 		unlock_GBP_right = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { trench_warfare = 1 }
+				set_technology = { grand_battle_plan = 1 }
+				set_technology = { prepared_defense = 1 }
+                set_technology = { grand_assault = 1 }
+				set_technology = { infantry_offensive = 1 }
+				set_technology = { armored_operations = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+
+ 		unlock_mass_mob_left = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { mass_assault = 1 }
+				set_technology = { pocket_defence = 1 }
+				set_technology = { defence_in_depth = 1 }
+                set_technology = { large_front_operations = 1 }
+				set_technology = { deep_operations = 1 }
+				set_technology = { operational_concentration = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}
+
+ 		unlock_mass_mob_right = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1			
+			NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEDOCTRINE }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { mass_assault = 1 }
+				set_technology = { pocket_defence = 1 }
+				set_technology = { defence_in_depth = 1 }
+                set_technology = { peoples_army = 1 }
+				set_technology = { human_infantry_offensive = 1 }
+				set_technology = { large_front_offensive = 1 }				
+                set_country_flag = CHOOSEDOCTRINE
+            }
+		}		
+
+ 		unlock_concentrated_industry = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			NOT = { has_country_flag = CHOOSEINDUSTRY }			
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEINDUSTRY }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 100
+			}
+
+            complete_effect = {
+                set_technology = { concentrated_industry = 1 }
+				set_technology = { concentrated_industry2 = 1 }
+				set_technology = { concentrated_industry3 = 1 }				
+                set_country_flag = CHOOSEINDUSTRY
+            }
+		}
+
+ 		unlock_dispersed_industry = {		
+			allowed = {
+            }
+
+            available = {
+			date < 1939.11.1				
+			NOT = { has_country_flag = CHOOSEINDUSTRY }
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP	
+			tag = CHI			
+            }}
+
+			visible = {
+				NOT = { has_country_flag = CHOOSEINDUSTRY }			
+			}
+
+			fire_only_once = no
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { dispersed_industry = 1 }
+				set_technology = { dispersed_industry2 = 1 }
+				set_technology = { dispersed_industry3 = 1 }				
+                set_country_flag = CHOOSEINDUSTRY
+            }
+		}
+
+ 		unlock_light_tanks = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = NEP
+			tag = CHI			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 50
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { advanced_light_tank = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}
+		
+ 		unlock_medium_tanks = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {			
+			tag = USA
+			tag = JAP
+			tag = AST	
+			tag = MAN	
+			tag = NZL	
+			tag = RAJ			
+            }
+			}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { basic_medium_tank = 1 }
+                #set_country_flag = NAME OF FLAG
+				#if = { limit = { TAG = JAP } add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 200 }	}
+            }
+		}
+
+ 		unlock_heavy_tanks = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = AST
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { improved_heavy_tank = 1 }
+                #set_country_flag = NAME OF FLAG				
+            }
+		}
+
+ 		unlock_swimming_tanks = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = MAN			
+			tag = AST
+			tag = PHI	
+			tag = NZL
+			tag = SIA			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 150
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { amphibious_tank = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}
+
+ 		unlock_fighter2 = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = CHI
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 50
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { fighter2 = 1 }
+			    set_technology = { cv_fighter2 = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}		
+
+ 		unlock_CAS2 = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = CHI			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { CAS2 = 1 }
+			    set_technology = { cv_CAS2 = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}
+
+ 		unlock_naval_bomber2 = {		
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = CHI			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { naval_bomber2 = 1 }
+				set_technology = { cv_naval_bomber2 = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}
+
+ 		unlock_heavy_fighter2 = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = CHI			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { heavy_fighter2 = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}
+
+ 		unlock_tactical_bomber2 = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = CHI			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { tactical_bomber2  = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}
+
+ 		unlock_strat_bomber2 = {	
+			allowed = {
+				#Everyone
+			}
+
+            available = {
+			date < 1939.11.1				
+			OR = {
+			tag = USA
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+			tag = AST
+			tag = PHI
+			tag = MAN
+			tag = SIA
+			tag = CHI			
+            }}
+
+			visible = {
+				always = yes
+			}
+
+			fire_only_once = no
+
+	        cost = 100
+
+			ai_will_do = {
+				factor = 0
+			}
+
+            complete_effect = {
+                set_technology = { strategic_bomber2 = 1 }
+                #set_country_flag = NAME OF FLAG
+            }
+		}		
+		
+}	

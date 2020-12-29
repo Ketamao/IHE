@@ -1,0 +1,253 @@
+spriteTypes = {	
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_gwtank_medium"
+		texturefile = "gfx/interface/technologies/BEL_INT.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/SAF_LT1_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_BEL_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/FRA_LT1_SPG.dds"
+	}
+	###
+	SpriteType = {
+		name = "GFX_BEL_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/SAF_LT2_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_BEL_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT2_SPG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/BEL_LT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/SAF_LT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_MT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/BEL_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_MT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_BEL_modern_td_medium"
+		texturefile = "gfx/interface/technologies/USA_MT_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_modern_art_medium"
+		texturefile = "gfx/interface/technologies/USA_MT_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/NZL_MT_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_HT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_HT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/FRA_HT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_basic_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_HT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/BEL_HT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/BEL_HT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_improved_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_HT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/USA_HT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/USA_HT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_advanced_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_BEL_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_super_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/HOL_SH_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/HOL_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_super_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_HT2_SPAAG.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BEL_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_AMP1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BEL_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/AMP2.dds"
+	}
+	
+				SpriteType = {
+		name = "GFX_BEL_airborne_tank_medium"
+		texturefile = "gfx/interface/technologies/BEL_ATT.dds"
+	}
+}

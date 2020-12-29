@@ -1,0 +1,625 @@
+ENG_IH&E_special = {
+
+
+	ENG_puppet_FRA = { 
+	
+				available = {
+				    if = { date > 1940.02.02 } 
+					FRA = { is_ai = yes }
+					always = no
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = FRA
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+					ENG = { puppet = FRA }
+					}
+				}
+				
+	ENG_puppet_NOR = { 
+	
+				available = {
+				    if = { date > 1940.02.02 } 
+					NOR = { is_ai = yes }
+					always = no
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = NOR
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+					ENG = { puppet = NOR }
+					}
+				}				
+
+	ENG_puppet_HOL = { 
+	
+				available = {
+					HOL = { is_ai = yes }
+				    if = { date > 1940.02.02 } 
+					always = no
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = HOL
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+					ENG = { puppet = HOL }
+					}
+				}
+
+	ENG_puppet_BEL = { 
+	
+				available = {
+					BEL = { is_ai = yes }
+				    if = { date > 1940.02.02 } 
+					always = no
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = BEL
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+					ENG = { puppet = BEL }
+					}
+				}
+
+	ENG_annex_CAN = { 
+	
+				available = {
+					CAN = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = CAN
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = CAN
+								transfer_troops = yes
+						}
+					}
+				}
+			
+	ENG_annex_RAJ = { 
+	
+				available = {
+					RAJ = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = RAJ
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = RAJ
+								transfer_troops = yes
+						}
+					}
+				}
+			
+	ENG_annex_SAF = { 
+	
+		available = {
+			SAF = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+		}
+					
+		allowed = { 
+			tag = ENG
+		}
+		visible = { 
+			country_exists = SAF
+		}
+				
+		fire_only_once = yes
+					
+		cost = 0 
+					
+		complete_effect = {
+			annex_country = {
+				target = SAF
+				transfer_troops = yes
+			}
+		}
+	}
+			
+	ENG_annex_AST = { 
+	
+				available = {
+					AST = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = AST
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = AST
+								transfer_troops = yes
+						}
+					}
+				}
+				
+	ENG_annex_NZL = { 
+	
+				available = {
+					NZL = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = ENG
+				}
+				visible = { 
+					country_exists = NZL
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = NZL
+								transfer_troops = yes
+						}
+					}
+				}
+	}
+	
+
+ENG_imperial_conference_decision = {
+	
+	ENG_imperial_conference_decision = {
+
+		icon = generic_political_discourse
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 60
+
+		fire_only_once = yes
+
+		activation = {
+			tag = ENG
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = yes
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = imperial_conference_ends_tt
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+					}
+				}
+				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_opinion }
+				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_approved_resolution }
+			}
+		}
+	}
+	
+	ENG_discuss_imperial_defense = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.83 hours = 6 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ENG_discuss_imperial_trade = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.87 hours = 6 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+		}
+
+
+	}
+
+	ENG_discuss_imperial_economy = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.91 hours = 6 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+		}
+
+	}
+
+	ENG_discuss_appeasement = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+			has_war = no
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.95 hours = 6 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+		}
+
+	}
+}
+
+political_actions = {
+
+	hold_blood_toil_tears_sweat_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_war_with = GER
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = blood_toil_tears_sweat_speech }
+			}
+			set_country_flag = blood_toil_tears_sweat_speech
+		}
+
+		ai_will_do = {
+			factor = 200 #Gotta allow the Americans to help
+		}
+	}
+
+	hold_fight_on_the_beaches_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_war_with = GER
+			is_in_faction_with = FRA
+			FRA = {
+				surrender_progress > 0.2
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_flag = blood_toil_tears_sweat_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = fight_on_the_beaches_speech }
+			}
+			set_country_flag = fight_on_the_beaches_speech
+		}
+
+		ai_will_do = {
+			factor = 200 #Gotta allow the Americans to help
+		}
+	}
+
+	hold_this_was_their_finest_hour_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_war_with = GER
+			is_in_faction_with = FRA
+			FRA = { has_capitulated = yes }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_flag = fight_on_the_beaches_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = this_was_their_finest_hour_speech }
+			}
+			set_country_flag = this_was_their_finest_hour_speech
+		}
+
+		ai_will_do = {
+			factor = 200 #Gotta allow the Americans to help
+		}
+	}
+}
+
+operations = {
+
+	operation_valentine = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_war_with = GER
+			337 = { is_controlled_by = SWI }
+			GER = { has_completed_focus = GER_weserubung }
+		}
+
+		cost = 25
+		fire_only_once = yes
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			GER = { has_completed_focus = GER_weserubung }
+		}
+		
+		complete_effect = {
+				transfer_state = 337
+			}
+		}
+
+	operation_fork = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_war_with = GER
+			GER = { has_completed_focus = GER_weserubung }
+			100 = { is_controlled_by = SWI }
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			GER = { has_completed_focus = GER_weserubung }
+		}
+		
+		complete_effect = {
+			transfer_state = 100
+		}
+	}
+}
+

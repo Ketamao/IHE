@@ -1,0 +1,124 @@
+﻿air_wings = {
+	
+	330 = {
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+            start_experience_factor = 0.3	
+
+		CAS_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		CAS_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		CAS_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		CAS_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		CAS_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3				
+	}
+}

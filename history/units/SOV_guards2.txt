@@ -1,0 +1,243 @@
+division_template = {
+	name = "Guards Tanks Div"			
+	division_names_group = SOV_GTC_01
+	template_counter = 125
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 0 y = 4 }
+						motorized = { x = 1 y = 0 } 
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }						
+						medium_armor = { x = 2 y = 0}
+						medium_armor = { x = 2 y = 1} 
+						medium_armor = { x = 2 y = 2} 
+						medium_armor = { x = 2 y = 3} 
+						medium_armor = { x = 2 y = 4} 
+						medium_armor = { x = 3 y = 0} 
+						medium_armor = { x = 3 y = 1} 
+						medium_armor = { x = 3 y = 2} 
+						medium_armor = { x = 3 y = 3} 
+						medium_armor = { x = 3 y = 4} 
+						medium_armor = { x = 4 y = 0}  
+						mot_anti_air_brigade = { x = 1 y = 3} 
+						mot_anti_air_brigade = { x = 1 y = 4} 
+				}
+	support = {
+		mot_recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }
+        anti_air = { x = 0 y = 3 }		
+	}
+}
+
+division_template = {
+	name = "Guards Motor Rifle Division"			
+	division_names_group = SOV_GMC_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }	
+		motorized = { x = 3 y = 3 }
+        mot_artillery_brigade = { x = 1 y = 3 }
+        mot_artillery_brigade = { x = 1 y = 4 } 
+        mot_artillery_brigade = { x = 2 y = 3 } 
+        mot_artillery_brigade = { x = 2 y = 4 }  		
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 }
+        anti_air = { x = 0 y = 3 }		
+	}
+}
+
+units = {
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+		#force_equipment_variants = { medium_tank_equipment_2 = { owner = "SOV" creator = "SWI" } }
+	}	
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}	
+}

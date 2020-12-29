@@ -1,0 +1,567 @@
+	#Operatives in original BUL
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		every_operative = {
+			limit = {
+				has_trait = trait_BUL_ff_sympathizer
+			}
+			set_nationality = BUF
+		}
+		if = {
+			limit = {
+				has_country_flag = BUL_zveno_joined_ff_flag
+			}
+			every_operative = {
+				limit = {
+					has_trait = trait_BUL_zveno_member
+				}
+				set_nationality = BUF
+			}
+		}
+	}
+
+BUL_get_random_bulgarian_destination_royal_visit = { #This works together with scripted loc
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				48 = { is_capital = yes } #No point on visiting your own city...
+			}
+			set_variable = { BUL_tsars_destination = 1 } # Sofia
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 2 } # Plovdiv
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 3 } # Ruse
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 4 } # Varna
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 5 } # Burgas
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 6 } # Vidin
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 7 } # Tarnovo
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 8 } # Stara Zagora
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 9 } # Haskovo
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 10 } # Shumen
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 11 } # Sliven
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 12 } # Yambol
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 13 } # Pleven
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 14 } # Dobrich
+			modifier = {
+				factor = 0
+				NOT = {
+					77 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 15 } # Skopje
+			modifier = {
+				factor = 0
+				NOT = {
+					106 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 16 } # Ohrid
+			modifier = {
+				factor = 0
+				NOT = {
+					106 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+		10 = {
+			set_variable = { BUL_tsars_destination = 17 } # Leskovac
+			modifier = {
+				factor = 0
+				NOT = {
+					803 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+	}
+}
+
+BUL_get_random_bulgarian_destination_march = { #This works together with scripted loc
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				48 = { is_capital = yes } #No point on marching from Sofia to Sofia...
+			}
+			set_variable = { BUL_march_destination = 1 } # Sofia
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 2 } # Plovdiv
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 3 } # Ruse
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 4 } # Varna
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 5 } # Burgas
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 6 } # Vidin
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 7 } # Tarnovo
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 8 } # Stara Zagora
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 9 } # Haskovo
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 10 } # Shumen
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 11 } # Sliven
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 12 } # Yambol
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 13 } # Pleven
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 14 } # Dobrich
+			modifier = {
+				factor = 0
+				NOT = {
+					77 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 15 } # Skopje
+			modifier = {
+				factor = 0
+				NOT = {
+					106 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 16 } # Ohrid
+			modifier = {
+				factor = 0
+				NOT = {
+					106 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+		10 = {
+			set_variable = { BUL_march_destination = 17 } # Leskovac
+			modifier = {
+				factor = 0
+				NOT = {
+					803 = {
+						is_owned_by = BUL
+						is_core_of = BUL
+					}
+				}
+			}
+		}
+	}
+}
+
+BUL_replace_national_industrial_designer = {
+	if = {
+		limit = {
+			has_idea =  BUL_petrol_ad
+		}
+		swap_ideas = {
+			remove_idea = BUL_petrol_ad
+			add_idea = BUL_petrol_ad_improved
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BUL_ira
+		}
+		swap_ideas = {
+			remove_idea = BUL_ira
+			add_idea = BUL_ira_improved
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BUL_pirin
+		}
+		swap_ideas = {
+			remove_idea = BUL_pirin
+			add_idea = BUL_pirin_improved
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BUL_vulkan_cement
+		}
+		swap_ideas = {
+			remove_idea = BUL_vulkan_cement
+			add_idea = BUL_vulkan_cement_improved
+		}
+	}	
+}
+
+BUL_replace_national_naval_designer = {
+	if = {
+		limit = {
+			has_idea = BUL_varna_naval_dockyard
+		}
+		custom_effect_tooltip = BUL_replace_national_naval_designer_tt
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = BUL_varna_naval_dockyard
+				add_idea = BUL_varna_naval_dockyard_improved
+			}
+		}
+	}
+	else = {
+		custom_effect_tooltip = BUL_replace_national_naval_designer_tt
+	}
+}
+
+BUL_replace_national_aircraft_designer = {
+	if = {
+		limit = {
+			has_idea = BUL_dar
+		}
+		swap_ideas = {
+			remove_idea = BUL_dar
+			add_idea = BUL_dar_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea = BUL_kaproni_bulgarski
+		}
+		swap_ideas = {
+			remove_idea = BUL_kaproni_bulgarski
+			add_idea = BUL_kaproni_bulgarski_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea = BUL_dvf
+		}
+		swap_ideas = {
+			remove_idea = BUL_dvf
+			add_idea = BUL_dvf_improved
+		}
+	}
+	if = {
+		limit = {
+			has_idea = BUL_dvf_sopot
+		}
+		swap_ideas = {
+			remove_idea = BUL_dvf_sopot
+			add_idea = BUL_dvf_sopot_improved
+		}
+	}
+}
+
+#Adds hidden NS granting attack & defense bonuses against the appropriate country (FROM - scope comes from "The Anti-Capitalist Fight" or "Toppling Giants" Focus)
+BUL_add_hidden_targeted_ns = {
+	if = {
+		limit = {
+			original_tag = ENG
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_eng
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = FRA
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_fra
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = GER
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_ger
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = ITA
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_ita
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = SOV
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_sov
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = SPR
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_spr
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = HOL
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_hol
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = BEL
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_bel
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = HUN
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_hun
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = GRE
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_gre
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = ROM
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_rom
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = POL
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_pol
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = FIN
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_fin
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = NOR
+		}
+		ROOT = {
+			add_ideas = BUL_anti_capitalism_nor
+		}
+	}
+}
+
+BUL_tsar_boris_may_die_effect = {
+	set_variable = { BUL_tsar_boris_death_probability = -100 } #Boris may die only if this variable becomes greater than 0 during this check
+
+	if = { #Having war against a major is relatively important
+		limit = {
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 15 }
+		if = { #Having war against main majors is significant
+			limit = {
+				OR = {
+					has_war_with = SOV
+					has_war_with = GER
+					has_war_with = ENG
+				}
+			}
+			add_to_variable = { BUL_tsar_boris_death_probability = 10 }
+		}
+	}
+
+	if = { #An ally being at war with SOV while BUL is not is important
+		limit = {
+			any_allied_country = {
+				has_war_with = SOV
+			}
+			BUL = { NOT = { has_war_with = SOV } }
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 25 }
+	}
+
+	if = { #Faction leader having different ideology is important
+		limit = {
+			any_allied_country = {
+				is_faction_leader = yes
+				NOT = { has_government = ROOT }
+			}
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 25 }
+	}
+
+	if = { #Low Non-Aligned support is important
+		limit = {
+			neutrality < 0.1
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 25 }
+	}
+	else_if = {
+		limit = {
+			neutrality < 0.25
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 20 }
+	}
+	else_if = {
+		limit = {
+			neutrality < 0.5
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 15 }
+	}
+
+	if = { #Low Stability support is important
+		limit = {
+			has_stability < 0.1
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 50 }
+	}
+	else_if = {
+		limit = {
+			has_stability < 0.25
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 35 }
+	}
+	else_if = {
+		limit = {
+			has_stability < 0.5
+		}
+		add_to_variable = { BUL_tsar_boris_death_probability = 25 }
+	}
+
+	add_to_variable = { BUL_tsar_boris_death_probability = BUL_tsar_boris_death_monthly_probability_factor }
+
+	randomize_temp_variable = {
+		var = BUL_random_tsar_boris_death_chance
+		distribution = binomial
+		min = 0
+		max = 100
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = BUL_tsar_boris_death_probability
+				value = BUL_random_tsar_boris_death_chance 
+				compare = greater_than_or_equals 
+			}
+		}
+		country_event = { id = bftb_bulgaria_tsar_boris.2 days = 15 random_days = 13 }
+	}
+
+	add_to_variable = { BUL_tsar_boris_death_monthly_probability_factor = 5 } #Increase 5% each month.
+}
+
+BUL_join_wars_of_from = {
+	hidden_effect = {
+		every_other_country = {
+			limit = {
+				has_war_with = FROM
+				NOT = { is_in_faction_with = ROOT }
+			}
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = FROM
+					enemy = PREV
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}
+
+BUL_remove_balkan_opinion_modifiers = { #Requires scoping to the other country joining Bulgaria's faction or being puppeted by Bulgaria
+	hidden_effect = {
+		remove_opinion_modifier = {
+			target = BUL
+			modifier = BFTB_balkan_pact_enemy
+		}
+		remove_opinion_modifier = {
+			target = BUL
+			modifier = BFTB_incongruous_neighbors
+		}
+		BUL = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = BFTB_incongruous_neighbors
+			}
+		}
+	}
+}

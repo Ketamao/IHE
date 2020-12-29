@@ -1,0 +1,26 @@
+
+state={
+	id=419
+	name="STATE_419"
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			1896 3 
+		}
+		add_core_of = SWI
+
+	}
+
+	provinces={
+		1636 1896 4755 4825 7604 12793 13120 
+	}
+	manpower=1431714
+	buildings_max_level_factor=1.000
+	state_category=rural
+	impassable = yes
+}

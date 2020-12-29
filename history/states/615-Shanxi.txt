@@ -1,0 +1,33 @@
+
+state={
+	id=615
+	name="STATE_615"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		victory_points = {
+			1519 3 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 2
+
+		}
+		1939.1.1 = {
+		owner = JAP
+		arms_factory = 0
+		industrial_complex = 0
+		}
+
+	}
+
+	provinces={
+		1004 1027 1180 1203 1438 1519 1575 4093 4208 4469 4538 4606 4634 6932 7571 10053 10421 10480 11931 12078 12344 
+	}
+	
+	manpower=11601000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

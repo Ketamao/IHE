@@ -1,0 +1,505 @@
+ideas = {
+    country = {
+            MON_conscription = {
+
+            picture = FRA_factory_strikes
+
+            allowed = {
+            original_tag = "MON"
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = 0.25
+            }
+        }
+    }
+
+	political_advisor = {
+
+		MON_dansrabilegyin_dogsam = {
+
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { backroom_backstabber }
+		}
+
+		MON_yundunwangcug = {
+
+			picture = generic_political_advisor_asia_3
+				
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		MON_pai_yun_ti = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		MON_Harghasun = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { smooth_talking_charmer }
+		}		
+	}	
+
+	army_chief = {
+		
+		MON_horloogiyn_choybalsan = {
+			
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+		MON_olziytrygyn_badrak = {
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	air_chief = {
+		
+
+		MON_gomgchigryn_bumtsend = {
+			
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { air_chief_ground_support_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		MON_sukhbaataryn_yanjmaa = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+		
+
+		MON_vg_pyrselov = {
+			
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = MON
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		MON_dashdorj = {
+			
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = MON
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		konstantin_rokossovsky = {
+			ledger = army
+			#Also unit leader: 402
+			
+			allowed = {
+				original_tag = MON
+			}
+			available = 
+			{
+				has_completed_focus = MON_moscowmilitaryadvisors
+			}
+			
+
+			
+			# Not purged, but tried and tortured, then released
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MON_lee_shou_hsin = {
+            ledger = army
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MON_chimid = {
+            ledger = army
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MON_buyannmeh = {
+            ledger = air
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		MON_haidav = {
+             ledger = air
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		MON_morozov_design_bureau = {
+			picture = morozov_design_bureau
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		MON_KhPZ_design_bureau = {
+			picture = KhPZ
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}		
+
+		MON_GAZ_design_bureau = {
+			picture = gaz
+			
+			allowed = {
+					original_tag = MON
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { assault_gun_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		MON_astrov_design_bureau = {
+			picture = astrov_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { pacific_light_tank_manufacturer } 
+			
+			modifier = {
+			}
+		}
+		
+		MON_okmo = {
+			picture = okmo
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		mig_design_bureau1 = {
+			picture = mig_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ilyushin_design_bureau1 = {
+			picture = ilyushin_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		tupolev_design_bureau1 = {
+			picture = tupolev_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		yakovlev_design_bureau1 = {
+			picture = yakovlev_design_bureau
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}	
+
+	theorist = {
+		MON_dagva = {
+            ledger = army
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		MON_ganbaatar = { 
+             ledger = navy
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		MON_ulanhu = {
+            ledger = air
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = MON
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+	aircraft_manufacturer = { 
+
+		mon_hawker = {
+			picture = hawker
+			allowed = {
+				original_TAG = MON
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer } 
+			
+			modifier = {
+			}
+		}
+
+ }
+}

@@ -1,0 +1,44 @@
+division_template = {
+	name = "1st Armoured Division"			
+	is_locked = no
+	division_names_group = POL_INF_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }		
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		motorized = { x = 2 y = 4 }	
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		medium_sp_anti_air_brigade = { x = 4 y = 0 }	
+		medium_sp_anti_air_brigade = { x = 4 y = 1 }
+	}
+	support = {
+        anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		rocket_artillery = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Armoured Division"
+		location = 9392
+		division_template = "1st Armoured Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "POL" } }	
+		start_experience_factor = 1.5
+	}
+}

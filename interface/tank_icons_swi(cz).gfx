@@ -1,0 +1,29 @@
+spriteTypes = {	
+
+	###
+	SpriteType = {
+		name = "GFX_SWI_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SWI_LT3.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_SWI_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SWI_MT1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SWI_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BRA_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWI_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/BRA_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWI_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/AST_HT2.dds"
+	}	
+}

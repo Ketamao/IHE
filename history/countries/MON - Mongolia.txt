@@ -1,0 +1,93 @@
+capital = 330
+
+oob = "MON_1936"
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	armored_car1 = 1
+	infantry_weapons = 1
+	gwtank = 1
+	gw_artillery = 1
+	superior_firepower = 1
+	CAS1 = 1
+	formation_flying = 1
+	early_bomber = 1
+	early_fighter = 1
+	basic_light_tank = 1  
+	improved_light_tank = 1 	
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	interwar_antiair = 1	
+}
+
+add_ideas = {
+    training_spirit
+	limited_conscription
+    MON_Rogue_state
+    MON_Rual_population
+    planned_economy_mon
+	closed_economy
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}
+
+create_country_leader = {
+	name = "Peljidiin Genden"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = portrait_Genden.dds
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Khorloogiin Choibalsan"
+	picture = "portrait_Choibalsan.dds"
+	traits = {  organizer cavalry_leader ranger offensive_doctrine armor_officer panzer_leader war_hero trickster hill_fighter }
+	skill = 7
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
+	id = 900
+}
+
+create_corps_commander = {
+	name = "Lkhagvasuren Jamiyan"
+	picture = "Lkhagvasuren_Jamyan1.dds"
+	traits = { cavalry_officer infantry_officer infantry_leader panzer_leader trickster desert_fox winter_specialist }
+	skill = 5
+	id = 901
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Temujin Batzorig"
+	picture = "Lkhagvasuren_Jamyan2.dds"
+	traits = { cavalry_leader infantry_officer infantry_leader ranger ambusher winter_specialist }
+	skill = 4
+	id = 902
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 6
+}
+
+
+

@@ -1,0 +1,109 @@
+﻿air_wings = {
+	653 = {
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+            start_experience_factor = 0.3				
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_1 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "YUG"
+							
+			}
+            start_experience_factor = 0.3				
+	}
+}

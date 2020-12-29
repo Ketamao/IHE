@@ -1,0 +1,386 @@
+﻿division_template = {
+	name = "Brigada Legionarioo"
+	is_locked = yes
+	division_names_group = SPAN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "División del Ejército de África"
+	division_names_group = SPAN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+     	artillery_brigade = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }		
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}	
+}
+
+units = {
+	division = {
+		name = "1a Brigada Legionarioo"
+		location = 11838  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "2a Brigada Legionarioo"
+		location = 9840  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "49a Brigada Legionarioo"
+		location = 9840  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "3a Brigada Legionarioo"
+		location = 6901  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "4a Brigada Legionarioo"
+		location = 3816  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "50a Brigada Legionarioo"
+		location = 3816  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "5a Brigada Legionarioo"
+		location = 11737  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "6a Brigada Legionarioo"
+		location = 7213  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "51a Brigada Legionarioo"
+		location = 7213  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "7a Brigada Legionarioo"
+		location = 9812  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "8a Brigada Legionarioo"
+		location = 948  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "9a Brigada Legionarioo"
+		location = 813  # Western Aragon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "10a Brigada Legionarioo"
+		location = 11766  # Burgos
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "11a Brigada Legionarioo"
+		location = 3859  # Burgos
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "12a Brigada Legionarioo"
+		location = 11806  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "13a Brigada Legionarioo"
+		location = 3820  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "14a Brigada Legionarioo"
+		location = 3820  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "15a Brigada Legionarioo"
+		location = 9827  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "16a Brigada Legionarioo"
+		location = 9846  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "17a Brigada Legionarioo"
+		location = 3874  # Salamanca
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "52a Brigada Legionarioo"
+		location = 3874  # Salamanca
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "18a Brigada Legionarioo"
+		location = 794  # Salamanca
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "19a Brigada Legionarioo"
+		location = 11756  # Extremadura
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "20a Brigada Legionarioo"
+		location = 9917  # Extremadura
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "21a Brigada Legionarioo"
+		location = 11780  # Extremadura
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "22a Brigada Legionarioo"
+		location = 985  # Extremadura
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "23a Brigada Legionarioo"
+		location = 6948  # Extremadura
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "24a Brigada Legionarioo"
+		location = 3810  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "25a Brigada Legionarioo"
+		location = 3871  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "26a Brigada Legionarioo"
+		location = 950  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "27a Brigada Legionarioo"
+		location = 12083  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "28a Brigada Legionarioo"
+		location = 1192  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "29a Brigada Legionarioo"
+		location = 4095  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "30a Brigada Legionarioo"
+		location = 1090  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "31a Brigada Legionarioo"
+		location = 7198  # Cordoba
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "31a Brigada Legionarioo"
+		location = 4182  # Sevilla
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "32a Brigada Legionarioo"
+		location = 10094  # Sevilla
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "33a Brigada Legionarioo"
+		location = 10094  # Sevilla
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "34a Brigada Legionarioo"
+		location = 3737  # Navarra
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "35a Brigada Legionarioo"
+		location = 3933  # Navarra
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "36a Brigada Legionarioo"
+		location = 932  # Navarra
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "37a Brigada Legionarioo"
+		location = 3902  # Burgos
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "38a Brigada Legionarioo"
+		location = 11852  # Burgos
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "39a Brigada Legionarioo"
+		location = 11854  # Burgos
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "40a Brigada Legionarioo"
+		location = 11854  # Burgos
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "41a Brigada Legionarioo"
+		location = 9700  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "42a Brigada Legionarioo"
+		location = 11684  # Valladolid
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "43a Brigada Legionarioo"
+		location = 9699  # Leon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "44a Brigada Legionarioo"
+		location = 726  # Leon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "45a Brigada Legionarioo"
+		location = 11843  # Leon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "46a Brigada Legionarioo"
+		location = 11843  # Leon
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "47a Brigada Legionarioo"
+		location = 729  # Galicia
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "48a Brigada Legionarioo"
+		location = 6764  # Galicia
+		division_template = "Brigada Legionarioo"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "1a División del Ejército de África"
+		location = 9945  
+		division_template = "División del Ejército de África"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }
+		start_experience_factor = 0.5		
+	}
+	division = {
+		name = "2a División del Ejército de África"
+		location = 10113 
+		division_template = "División del Ejército de África"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }
+		start_experience_factor = 0.5		
+	}
+	division = {
+		name = "3a División del Ejército de África"
+		location = 12087
+		division_template = "División del Ejército de África"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }
+		start_experience_factor = 0.5		
+	}
+	division = {
+		name = "4a División del Ejército de África"
+		location = 7215
+		division_template = "División del Ejército de África"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }
+		start_experience_factor = 0.5		
+	}
+	division = {
+		name = "4a División del Ejército de África"
+		location = 12100
+		division_template = "División del Ejército de África"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FIL" } }
+		start_experience_factor = 0.5		
+	}	
+}

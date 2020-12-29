@@ -1,0 +1,39 @@
+
+state={
+	id=213
+	name="STATE_213"
+	resources={
+		steel=14.000
+		chromium=12.000
+		tungsten=25.000
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			3134 20
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			3134 = {
+				naval_base = 4
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = SOV
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+
+	provinces={
+		15 74 142 178 3134 6117 6157 6181 9039 9115 9201 9203 11031 11117 11128 11183 
+	}
+	manpower=211751
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

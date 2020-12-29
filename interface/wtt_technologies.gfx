@@ -1,0 +1,134 @@
+spriteTypes = {
+	### Manchukuo
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_LT3_AT.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_HT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_MT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_main_battle_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/AMP1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CHI_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/AMP2.dds"
+	}
+	
+				SpriteType = {
+		name = "GFX_CHI_airborne_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_ATT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_gwtank_medium"
+		texturefile = "gfx/interface/technologies/chi_gwtank.dds"
+	}	
+}
+

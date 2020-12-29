@@ -1,0 +1,89 @@
+division_template = {
+	name = "Polish Army in France"			
+	is_locked = no
+	division_names_group = POL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }		
+	}
+	support = {
+        anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+		rocket_artillery = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "10th Armoured Cavalry Brigade" 		
+	division_names_group = POL_MEC_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }			
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }    
+		anti_air = { x = 0 y = 1 } 		
+		engineer = { x = 0 y = 2 } 	
+		artillery = { x = 0 y = 3 }
+		rocket_artillery = { x = 0 y = 3 }
+	}
+}
+
+
+
+
+units = {
+	division = {
+		name = "1st Grenadier Division"
+		location = 11506
+		division_template = "Polish Army in France"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "POL" } }	
+		start_experience_factor = 0.9
+	}
+	division = {
+		name = "2nd Infantry Fusiliers Division"
+		location = 11506
+		division_template = "Polish Army in France"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "POL" } }	
+		start_experience_factor = 0.9
+	}
+	division = {
+		name = "3rd Infantry Division"
+		location = 11506
+		division_template = "Polish Army in France"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "POL" } }	
+		start_experience_factor = 0.9
+	}
+	division = {
+		name = "4th Infantry Division"
+		location = 11506
+		division_template = "Polish Army in France"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "POL" } }	
+		start_experience_factor = 0.9
+	}
+	division = {
+		name = "10th Armoured Cavalry Brigade"
+		location = 11506
+		division_template = "10th Armoured Cavalry Brigade"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "POL" } }	
+		force_equipment_variants = { light_tank_equipment_3 = { owner = "FRA" } }	
+		start_experience_factor = 0.9
+	}
+}

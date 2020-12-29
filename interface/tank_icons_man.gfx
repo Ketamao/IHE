@@ -1,0 +1,248 @@
+spriteTypes = {	
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_gwtank_medium"
+		texturefile = "gfx/interface/technologies/MAN_INT.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_MAN_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1_SPG.dds"
+	}
+	###
+	SpriteType = {
+		name = "GFX_MAN_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT2_SPAAG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_MAN_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1_SPG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_LT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_LT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_MT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/MAN_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/MAN_MT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT2_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MAN_modern_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_modern_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_MT.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_MAN_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_super_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/JAP_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/JAP_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_super_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/JAP_SH.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MAN_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_AMP.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MAN_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/MAN_AMP2.dds"
+	}
+}

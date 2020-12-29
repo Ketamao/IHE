@@ -1,0 +1,130 @@
+capital = 550
+
+oob = "IEA_1936"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+add_ideas = {
+	free_trade
+	limited_conscription
+	partial_economic_mobilisation
+	IEA_unwelcomed_occupant
+	IEA_Italian_funds
+	extra_trade_hun
+}
+
+set_convoys = 50
+
+if = {
+	limit = {
+		has_start_date < 1936.01.02
+	}
+
+	declare_war_on = {
+		target = ETH
+		type = annex_everything
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+
+create_country_leader = {
+	name = "Rodolfo Graziani"
+	desc = "POLITICS_RODOLFO_GRAZIANI_PATS_DESC"
+	picture = "portrait_italIian_radolfo_graziani.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		griazani
+	}
+}
+
+create_field_marshal = {
+	name = "Pietro Badoglio"
+	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Guglielmo Nasi"
+	picture = "Portrait_Italy_Guglielmo_Nasi.dds"
+	traits = { infantry_officer infantry_leader war_hero career_officer inflexible_strategist harsh_leader hill_fighter }
+	skill = 4
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Amedeo Savoia Aosta"
+	picture = "Portrait_Italy_Amedeo_Savoia_Aosta.dds"
+	traits = { politically_connected old_guard trait_cautious media_personality infantry_officer organizer infantry_leader trait_mountaineer }
+	skill = 3
+    attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Pietro Gazzera"
+	picture = "Portrait_Italy_Pietro_Gazzera.dds"
+	traits = { infantry_officer inflexible_strategist war_hero guerilla_fighter commando desert_fox }
+	skill = 3
+    attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Pirzo Biroli"
+	picture = "Portrait_Italy_Pirzo_Biroli.dds"
+	traits = { infantry_officer harsh_leader ambusher hill_fighter }
+	skill = 2
+    attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

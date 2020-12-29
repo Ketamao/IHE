@@ -1,0 +1,516 @@
+﻿division_template = {
+	name = "Brigada Internacionaless"			# International volunteers -- poor equipment, no experience (militia)
+	is_locked = yes
+	division_names_group = SPR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }			
+	}
+}
+
+division_template = {
+	name = "Cuerpo mecanizado" 				
+	division_names_group = SPAN_ARM_01									
+													
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }			
+		motorized = { x = 2 y = 0 }	
+		motorized = { x = 2 y = 1 }		
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }		
+	}
+}
+
+units = {
+	division = {
+		name = "I Brigada Internacionaless"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }	
+	}
+	division = {
+		name = "II Brigada Internacionaless"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "III Brigada Internacionaless"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "IV Brigada Internacionaless"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "V Brigada Internacionaless"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+
+	division = {
+		name = "VI Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }		
+	}
+	
+	division = {
+		name = "VII Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }		
+	}
+	division = {
+		name = "VIII Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }		
+	}
+	division = {
+		name = "IX Brigada Internacionaless"
+		location = 6906  # Valencia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "X Brigada Internacionaless"
+		location = 6906  # Valencia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XI Brigada Internacionaless"
+		location = 6906  # Valencia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XII Brigada Internacionaless"
+		location = 10024  # Murcia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MEX" } }			
+	}
+	division = {
+		name = "XIII Brigada Internacionaless"
+		location = 10024  # Murcia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MEX" } }			
+	}
+	division = {
+		name = "XIV Brigada Internacionaless"
+		location = 10024  # Murcia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "MEX" } }			
+	}
+	division = {
+		name = "XV Brigada Internacionaless"
+		location = 9979  # Malaga
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CZE" } }			
+	}
+	division = {
+		name = "XVI Brigada Internacionaless"
+		location = 9979  # Malaga
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CZE" } }		
+	}
+	division = {
+		name = "XVII Brigada Internacionaless"
+		location = 9979  # Malaga
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CZE" } }		
+	}
+	division = {
+		name = "XVIII Brigada Internacionaless"
+		location = 3735  # Bilbao
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CZE" } }		
+	}
+	division = {
+		name = "XIX Brigada Internacionaless"
+		location = 3735  # Bilbao
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CZE" } }		
+	}
+	division = {
+		name = "XX Brigada Internacionaless"
+		location = 740  # Bilbao
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "CZE" } }		
+	}
+	division = {
+		name = "XXI Brigada Internacionaless"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }		
+	}
+	division = {
+		name = "XXII Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XXIII Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XXIV Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XXV Brigada Internacionaless"
+		location = 9764  # Barcelona
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XXVI Brigada Internacionaless"
+		location = 6906  # Valencia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+	division = {
+		name = "XXVII Brigada Internacionaless"
+		location = 6906  # Valencia
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }			
+	}
+
+	division = {
+		name = "XXVIII Brigada Internacionaless"
+		location = 3794 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }			
+	}	
+
+	division = {
+		name = "XXIX Brigada Internacionaless"
+		location = 9767
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }			
+	}	
+	division = {
+		name = "XXX Brigada Internacionaless"
+		location = 3954
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }			
+	}	
+	division = {
+		name = "XXXI Brigada Internacionaless"
+		location = 3954
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }			
+	}	
+	division = {
+		name = "XXXII Brigada Internacionaless"
+		location = 3954
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }			
+	}	
+	division = {
+		name = "XXXIII Brigada Internacionaless"
+		location = 3945 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }			
+	}	
+	division = {
+		name = "XXXIV Brigada Internacionaless"
+		location = 3945 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XXXV Brigada Internacionaless"
+		location = 3945 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }			
+	}	
+	division = {
+		name = "XXXVI Brigada Internacionaless"
+		location = 9903 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }			
+	}	
+	division = {
+		name = "XXXVII Brigada Internacionaless"
+		location = 9903 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }			
+	}	
+	division = {
+		name = "XXXVIII Brigada Internacionaless"
+		location = 9903 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CZE" } }		
+	}	
+	division = {
+		name = "XXXIX Brigada Internacionaless"
+		location = 6832  
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CZE" } }			
+	}	
+	division = {
+		name = "XL Brigada Internacionaless"
+		location = 6832  
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }			
+	}	
+	division = {
+		name = "XLI Brigada Internacionaless"
+		location = 6832  
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }			
+	}	
+	division = {
+		name = "XLII Brigada Internacionaless"
+		location = 1176  
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLIII Brigada Internacionaless"
+		location = 1176  
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLIV Brigada Internacionaless"
+		location = 1176  
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLV Brigada Internacionaless"
+		location = 6756 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLVI Brigada Internacionaless"
+		location = 11688
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLVII Brigada Internacionaless"
+		location =738 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLVIII Brigada Internacionaless"
+		location = 9703 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "XLIX Brigada Internacionaless"
+		location = 6749
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "L Brigada Internacionaless"
+		location = 3729 
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "LI Brigada Internacionaless"
+		location = 3744
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "LII Brigada Internacionaless 25"
+		location = 9719
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "LIII Brigada Internacionaless 25"
+		location = 7153
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LIV Brigada Internacionaless 25"
+		location = 100009
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LV Brigada Internacionaless 25"
+		location = 7068
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LVI Brigada Internacionaless 25"
+		location = 11956
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LVII Brigada Internacionaless 25"
+		location = 7196
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LVIII Brigada Internacionaless 25"
+		location = 4195
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LIX Brigada Internacionaless 25"
+		location = 11807
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LX Brigada Internacionaless 25"
+		location = 9828
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXI Brigada Internacionaless 25"
+		location = 12081
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXII Brigada Internacionaless 25"
+		location = 6896
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXIII Brigada Internacionaless 25"
+		location = 9881
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXIV Brigada Internacionaless 25"
+		location = 3986
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXV Brigada Internacionaless 25"
+		location = 11820
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXVI Brigada Internacionaless 25"
+		location = 3845
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXVII Brigada Internacionaless 25"
+		location = 939
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXVIII Brigada Internacionaless 25"
+		location = 9800
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXIX Brigada Internacionaless 25"
+		location = 977
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXX Brigada Internacionaless 25"
+		location = 6841
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXI Brigada Internacionaless 25"
+		location = 9785
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXII Brigada Internacionaless 25"
+		location = 9933
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXIII Brigada Internacionaless 25"
+		location = 871
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXIV Brigada Internacionaless 25"
+		location = 798
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXV Brigada Internacionaless 25"
+		location = 3909
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXVI Brigada Internacionaless 25"
+		location = 790
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "LXXVII Brigada Internacionaless 25"
+		location = 9813
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXVIII Brigada Internacionaless 25"
+		location = 11821
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}
+	division = {
+		name = "LXXIX Brigada Internacionaless 25"
+		location = 915
+		division_template = "Brigada Internacionaless"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "FIL" } }		
+	}	
+	division = {
+		name = "I Cuerpo mecanizado"
+		location = 3938  # Madrid
+		division_template = "Cuerpo mecanizado"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "SOV" } }		
+	}	
+}

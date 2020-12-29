@@ -1,0 +1,32 @@
+
+state={
+	id=656
+	name="STATE_656"
+
+	history={
+		owner = ENG
+		victory_points = {
+			8085 100
+		}
+		buildings = {
+			infrastructure = 4
+			8085 = {
+				naval_base = 4
+
+			}
+
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		8085 13271 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=803
+	name="STATE_803"
+
+	history={
+		owner = IEA
+		add_core_of = IEA
+		victory_points = {
+			10891 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+
+	provinces={
+		1964 1966 2020 4909 5065 10818 10891 12840 
+	}
+	manpower=342900
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

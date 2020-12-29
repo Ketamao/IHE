@@ -1,0 +1,198 @@
+spriteTypes = {
+
+	### PHI ###
+
+	SpriteType = {
+		name = "GFX_PHI_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_F0.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/USA_F1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_F2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_F3.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_F0_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/USA_F1_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_F2_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_F3_CV.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_PHI_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/BRA_CAS1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/USA_CAS1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_CAS2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_CAS3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_PHI_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/MEX_NAV1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_NAV2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_NAV3.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_NAV1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_NAV2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_NAV3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_PHI_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/USA_HF1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_PHI_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_HF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_HF3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_PHI_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/planes/BRA_TAC0.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_TAC1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_TAC2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_TAC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/USA_HB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_HB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_HB3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_PHI_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_SP1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_SP2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_JETF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_JETF2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_PHI_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/CHI_JETB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PHI_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/USA_JETHB.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_PHI_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/PHI_T.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_PHI_rocket_interceptor_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_PHI_rocket_interceptor_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PHI_rocket_interceptor_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI3.dds"
+	}	
+
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=799
+	name="STATE_799"
+	manpower = 772000
+	resources={
+	}
+	
+	state_category = town
+	resources={
+		tungsten= 17
+	}	
+
+	history={
+		owner = MON
+		victory_points = {
+			7799 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = MON
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+
+	provinces={
+		4751 7843 12695 10669 7773 1689 10539 1774 7870 7808 1855 10695 12544 7799 12520 4777 10563
+	}
+}

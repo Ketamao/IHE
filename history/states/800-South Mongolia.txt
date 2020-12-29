@@ -1,0 +1,26 @@
+
+state={
+	id=800
+	name="STATE_800"
+	manpower = 772000
+	resources={
+	}
+	
+	state_category = town
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MON
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+
+	provinces={
+		4786 4729 1781 10560 10634 4858 10689 12669 12539 1853 10558 4856 10632 7806 12541 7864 1725 12614 1723
+	}
+}

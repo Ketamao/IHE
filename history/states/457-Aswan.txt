@@ -1,0 +1,25 @@
+
+state={
+	id=457
+	name="STATE_457"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		4068 4910 5069 7156 9957 12002 12889 13247 13260 
+	}
+	manpower=2194
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,325 @@
+
+economy_decisions = {
+
+	FRA_revoke_the_matignon_agreements = {
+		visible = { has_idea = FRA_matignon_agreements }
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			remove_ideas = FRA_matignon_agreements
+			if = {
+				limit = {
+					communism > 0.25
+				}
+				country_event = lar_france_political_violence.2
+			}
+		}
+	}
+
+	FRA_reorganize_aviation_industry_north = {
+		available = {  }
+
+		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
+
+		remove_effect = { 
+			set_country_flag = FRA_SNCAN_formed
+			random_owned_state = {
+				limit = { 
+					OR = {
+						state = 29 
+						state = 785 
+						state = 15 
+						state = 16
+					}
+					is_fully_controlled_by = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 120
+		cost = 50
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+	FRA_reorganize_aviation_industry_west = {
+		available = {  }
+
+		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
+
+		remove_effect = { 
+			set_country_flag = FRA_SNCAO_formed
+			random_owned_state = {
+				limit = { 
+					OR = {
+						state = 30
+						state = 14
+						state = 23
+					}
+					is_fully_controlled_by = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 120
+		cost = 50
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_reorganize_aviation_industry_center = {
+		available = {  }
+
+		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
+
+		remove_effect = { 
+			set_country_flag = FRA_SNCAC_formed
+			random_owned_state = {
+				limit = { 
+					OR = {
+						state = 24
+						state = 33
+						state = 27
+						state = 26
+						state = 25
+					}
+					is_fully_controlled_by = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 120
+		cost = 50
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_reorganize_aviation_industry_south_east = {
+		available = {  }
+
+		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
+
+		remove_effect = { 
+			set_country_flag = FRA_SNCASE_formed
+			random_owned_state = {
+				limit = { 
+					OR = {
+						state = 735
+						state = 32
+						state = 20
+						state = 21
+					}
+					is_fully_controlled_by = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 120
+		cost = 50
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	FRA_reorganize_aviation_industry_south_west = {
+		available = {  }
+
+		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }
+
+		remove_effect = { 
+			set_country_flag = FRA_SNCASO_formed
+			random_owned_state = {
+				limit = { 
+					OR = {
+						state = 22
+						state = 31
+						state = 19
+						state = 25
+					}
+					is_fully_controlled_by = ROOT 
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 120
+		cost = 50
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
+
+FRA_free_france = {
+	FRA_move_capital_to_morocco = {
+		available = {
+			has_capitulated = yes
+		}
+		visible = { 
+		 	has_capitulated = yes
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_capital = 461
+		}
+	}
+	
+	FRA_annex_VIC = {
+		available = {
+			if = {
+				date > 1942.1.1
+				controls_state = 16
+			}
+		}
+		visible = { 
+		 	OR = {
+				date > 1942.1.1
+				has_capitulated = yes
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_capital = 16
+			FRA = {
+					transfer_state = 20
+					transfer_state = 21
+					transfer_state = 22
+					transfer_state = 32
+					transfer_state = 31
+					transfer_state = 25
+					transfer_state = 33
+					transfer_state = 26
+			}
+		}
+	}
+	
+	FRA_annex_BCO = {
+		available = {
+			not = {
+				controls_state = 461
+			}
+			BEL = { is_ai = yes }			
+			BEL = { has_full_control_of_state = 295 has_full_control_of_state = 538 has_full_control_of_state = 718 has_full_control_of_state = 768 has_full_control_of_state = 769 }
+			}
+		}
+		visible = { 
+		 	has_capitulated = yes
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			FRA = {
+					transfer_state = 796
+					transfer_state = 295
+					transfer_state = 538
+					transfer_state = 718
+					transfer_state = 768
+					transfer_state = 769
+			}
+		}
+	}
+	
+	FRA_move_capital_to_senegal = {
+		available = {
+			not = {
+				controls_state = 461
+			}
+		}
+		visible = { 
+		 	has_capitulated = yes
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_capital = 272
+		}
+	}
+	
+	FRA_move_capital_to_cameroon = {
+		available = {
+			not = {
+				controls_state = 461
+			}
+		}
+		visible = { 
+		 	has_capitulated = yes
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_capital = 773
+		}
+	}
+}
+
+

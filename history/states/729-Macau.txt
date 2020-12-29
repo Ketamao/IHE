@@ -1,0 +1,24 @@
+state={
+	id=729
+	name="STATE_729"
+	manpower=1
+	state_category = wasteland
+	impassable = yes
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 1
+			4189 = {
+				naval_base = 5
+			}
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+	
+	provinces={
+		4189 
+	}
+}

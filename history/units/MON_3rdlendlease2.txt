@@ -1,0 +1,40 @@
+﻿air_wings = {
+	
+	330 = {
+		nav_bomber_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		nav_bomber_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		nav_bomber_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		nav_bomber_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		nav_bomber_equipment_3 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3				
+	}
+}

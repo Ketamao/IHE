@@ -1,0 +1,25 @@
+state={
+	id=733
+	name="STATE_733"
+	manpower=29500
+	state_category = small_island
+	
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			12251 = {
+				naval_base = 2
+
+			}
+		}
+		1938.10.25 = {
+			owner = AST
+
+		}
+
+	}
+	provinces={
+		10321 12251 
+	}
+}

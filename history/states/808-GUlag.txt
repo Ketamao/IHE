@@ -1,0 +1,26 @@
+
+state={
+	id=808
+	name="STATE_808"
+	manpower = 50000
+	
+	state_category = enclave
+	resources={
+		steel=25 # was: 40
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 10
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+	}
+
+	provinces={
+		228 
+	}
+}

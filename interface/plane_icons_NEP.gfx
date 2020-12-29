@@ -1,0 +1,198 @@
+spriteTypes = {
+
+	### nepal ###
+
+	SpriteType = {
+		name = "GFX_NEP_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_F0.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_F1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEP_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_F2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEP_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_F3.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/NOR_F0_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEP_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_F1_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEP_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_F2_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEP_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/RAJ_F3_CV.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_NEP_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/RAJ_CAS1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/NZL_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/HOL_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_CAS1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_CAS2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_CAS3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_NEP_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/NZL_NAV1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/CHI_NAV2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_NAV3.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_NAV1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_NAV2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_NAV3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_NEP_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_HF1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_NEP_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_HF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_HF3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_NEP_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_TAC0.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_TAC1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_TAC2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/RAJ_TAC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEP_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_HB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_HB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_HB3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_NEP_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_SP1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_SP2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_JETF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/FRA_JETF2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NEP_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_JETB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NEP_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETHB.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_NEP_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/NEP_T.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NEP_rocket_interceptor_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_NEP_rocket_interceptor_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEP_rocket_interceptor_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI3.dds"
+	}	
+
+}

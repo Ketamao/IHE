@@ -1,0 +1,29 @@
+state={
+	id=811
+	name="STATE_811"
+	history={
+		owner = CHI
+		add_core_of = CHI
+		victory_points = {
+			
+		}
+		buildings = {
+			infrastructure = 3
+			4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+		}
+		1938.10.25 = {
+			owner = JAP
+
+		}
+	}
+	provinces={
+		4196 
+	}
+	manpower=600115
+	buildings_max_level_factor=1.000
+}

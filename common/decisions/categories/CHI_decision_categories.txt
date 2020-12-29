@@ -1,0 +1,32 @@
+
+CHI_army_reform = {
+	icon = army_reform
+	allowed = {
+		is_literally_china = yes
+	}
+
+	visible = {
+	}
+}
+
+
+CHI_xian_incident = {
+	icon = power_struggle
+	allowed = {
+		is_independent_china_or_warlord = yes
+		NOT = {
+			OR = {
+				tag = CHI
+				tag = PRC
+			}
+		}
+	}
+}
+
+Burma_road_category = {
+	icon = power_struggle
+	picture = GFX_decision_cat_generic_rattanakosin_kingdom
+	allowed = {
+		tag = CHI
+	}
+}

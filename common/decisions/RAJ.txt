@@ -1,0 +1,33 @@
+foreign_politics = {
+RAJ_annex_nep = {
+		icon = generic_operation
+
+			allowed = {
+				tag = RAJ
+			}
+
+			available = {
+				NEP = { is_ai = yes }
+				GER = { has_completed_focus = GER_danzig_or_war }
+			}
+			
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+			country_exists = RAJ
+				}
+				
+			complete_effect = {
+				add_state_core = 323
+				RAJ = { 
+					annex_country = {
+						target = NEP
+						transfer_troops = yes 
+					}
+			}
+		}
+
+}
+}

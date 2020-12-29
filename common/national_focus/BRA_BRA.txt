@@ -1,0 +1,1553 @@
+focus_tree = {
+	id = BRA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	
+	continuous_focus_position = { x = 70 y = 1200 }
+	
+	#Focus for Establish independent Air Force
+	focus = {
+		id = BRA_establishindependentairforce
+		icon = GFX_braairforce
+		x = 16
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_commissionnewlieutenants }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber			
+			}
+			add_tech_bonus = {
+				name = BRA_fighter_modernisation
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}		
+				add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	#Focus for French military school
+	focus = {
+		id = BRA_frenchmilitaryschool
+		icon = GFX_focus_attack_france
+		x = 17
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_missomilitarfrancesa }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = BRA_Army_for_Internal_Security
+		add_idea = BRA_Army_for_Internal_Security_III
+		}
+		add_stability = 0.05
+		}
+	}
+
+	#Focus for European military doctrine
+	focus = {
+		id = BRA_europeanmilitarydoctrine
+		icon = GFX_europeandoctrinebrz
+		x = 17
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_frenchmilitaryschool }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+			name = land_doctrine
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Equipment modernisation program
+	focus = {
+		id = BRA_equipmentmodernisationprogram
+		icon = GFX_bragunupgrade
+		x = 15
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_missomilitarfrancesa }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = BRA_army_modernisation
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = support_weapons
+			}
+			#1 x 50% for Infantry Equipment
+		}
+	}
+
+	#Focus for Missão Militar Francesa
+	focus = {
+		id = BRA_missomilitarfrancesa
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 16
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		army_experience = 30
+		}
+	}
+
+	#Focus for Mils 2
+	focus = {
+		id = BRA_mils2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 9
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_mils }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for the Third Brazilian Republic
+	focus = {
+		id = BRA_thethirdbrazilianrepublic
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 10
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_estadonovo 
+		}
+		prerequisite = { 
+			focus = BRA_disbandallpoliticalparties 
+		}
+		completion_reward = {
+		remove_ideas = BRA_Vargas_power
+		set_politics = { ruling_party = neutrality }
+		}
+	}
+
+	#Focus for Disband all Political Parties
+	focus = {
+		id = BRA_disbandallpoliticalparties
+		icon = GFX_focus_usa_voter_registration_act
+		x = 10
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_vargasera }
+		completion_reward = {
+		add_ideas = { BRA_One_Party_System 
+			}
+		}
+	}
+
+
+	#Focus for Father of the Poor
+	focus = {
+		id = BRA_fatherofthepoor
+		icon = GFX_fatherofpoor
+		x = 7
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_economicnationalism }
+		completion_reward = {
+		add_timed_idea = { 
+			idea = Father_of_the_poor 
+			days = 365
+			}
+		}
+	}
+
+	#Focus for Mils
+	focus = {
+		id = BRA_mils
+		icon = GFX_brzindustry
+		x = 9
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_autarky 
+		}
+		prerequisite = { 
+			focus = BRA_usabrazilcooperation 
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for USA-Brazil cooperation
+	focus = {
+		id = BRA_usabrazilcooperation
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 10
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_thethirdbrazilianrepublic }
+		completion_reward = {
+		add_ideas = { BRA_USA_influence 
+			}
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_research_slot = 1
+		}
+	}
+
+	#Focus for civs 3
+	focus = {
+		id = BRA_civs_3
+		icon = GFX_porteco
+		x = 3
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_ports }
+		prerequisite = { focus = BRA_civs_2 }
+		completion_reward = {
+			501 = {
+			add_extra_state_shared_building_slots = 1
+			}
+			500 = {
+			add_extra_state_shared_building_slots = 2
+			}
+			503 = {
+			add_extra_state_shared_building_slots = 1
+			}		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Indutrial expansions
+	focus = {
+		id = BRA_indutrialexpansions
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_autarky 
+		}
+		prerequisite = { 
+			focus = BRA_usabrazilcooperation 
+		}
+		completion_reward = {
+		random_owned_controlled_state = {
+		limit = {
+		free_building_slots = {
+		building = industrial_complex
+		size > 1
+		include_locked = yes
+			}
+		}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Ports
+	focus = {
+		id = BRA_ports
+		icon = GFX_braziltrade
+		x = 1
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_roads2 }
+		completion_reward = {
+			
+		if = { limit = { 498 = { is_owned_and_controlled_by = BRA } }
+		498 = {
+		add_building_construction = {
+		type = naval_base
+		level = 4
+		province = 5107
+		instant_build = yes
+		}
+		add_building_construction = {
+		type = naval_base
+		level = 4
+		province = 5168
+		instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Autarky
+	focus = {
+		id = BRA_autarky
+		icon = GFX_goal_generic_consumer_goods
+		x = 6
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_industry2 
+		}
+		prerequisite = { 
+			focus = BRA_economicnationalism 
+		}
+		completion_reward = {
+			add_ideas = BRA_autarky
+		}
+	}
+
+	#Focus for industry 2
+	focus = {
+		id = BRA_industry2
+		icon = GFX_brazilianindustry1
+		x = 5
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_civs_2 }
+		completion_reward = {
+			
+		add_tech_bonus = {
+		name = BRA_four_year_plan
+		bonus = 1.0
+		uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+				technology = construction3
+				technology = construction4
+				technology = construction5
+		}
+
+		}
+	}
+
+	#Focus for undefined
+	focus = {
+		id = BRA_civs
+		icon = GFX_brazilianindustry3
+		x = 4
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_urbanisationefforts }
+		completion_reward = {
+		random_owned_controlled_state = {
+		limit = {
+		free_building_slots = {
+		building = industrial_complex
+		size > 1
+		include_locked = yes
+			}
+		}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Roads
+	focus = {
+		id = BRA_roads
+		icon = GFX_braroads
+		x = 1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_urbanisationefforts }
+		completion_reward = {
+			
+			if = { limit = { 504 = { is_owned_and_controlled_by = BRA } }
+			504 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+					}
+				}
+			}
+			if = { limit = { 505 = { is_owned_and_controlled_by = BRA } }
+			505 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Resources of Our Own
+	focus = {
+		id = BRA_resourcesofourown
+		icon = GFX_brazilianresources
+		x = 5
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_autarky 
+		}
+		completion_reward = {
+			
+			add_tech_bonus = {
+			name = BRA_autarky
+			bonus = 1.0
+			uses = 2
+			technology = excavation1
+			technology = excavation2
+			technology = excavation3
+			technology = excavation4
+			technology = excavation5
+			}
+		}
+	}
+
+	#Focus for Urbanisation Efforts
+	focus = {
+		id = BRA_urbanisationefforts
+		icon = GFX_braurbanisation1
+		x = 3
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			
+			if = { limit = { 496 = { is_owned_and_controlled_by = BRA } }
+			496 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+				}
+					}
+			if = { limit = { 499 = { is_owned_and_controlled_by = BRA } }
+			499 = {
+			add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+			}
+				}
+					}
+			add_tech_bonus = {
+			name = BRA_four_year_plan
+			bonus = 1.0
+			uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+				technology = construction3
+				technology = construction4
+				technology = construction5
+			}
+		}
+	}
+
+	#Focus for Economic Nationalism
+	focus = {
+		id = BRA_economicnationalism
+		icon = GFX_brazilianeconation
+		x = 6
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_estadonovo }
+		completion_reward = {
+			add_ideas = BRA_Economic_Nationalism
+		}
+	}
+
+	#Focus for Roads 2
+	focus = {
+		id = BRA_roads2
+		icon = GFX_braroads
+		x = 1
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_roads }
+		completion_reward = {
+			
+		if = { limit = { 498 = { is_owned_and_controlled_by = BRA } }
+		498 = {
+		add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+				}
+			}
+		}
+		if = { limit = { 500 = { is_owned_and_controlled_by = BRA } }
+		500 = {
+		add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Civs
+	focus = {
+		id = BRA_civs_2
+		icon = GFX_brazilianindustry2
+		x = 4
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_civs }
+		completion_reward = {
+		random_owned_controlled_state = {
+		limit = {
+		free_building_slots = {
+		building = industrial_complex
+		size > 1
+		include_locked = yes
+			}
+		}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Commission new lieutenants
+	focus = {
+		id = BRA_commissionnewlieutenants
+		icon = GFX_brazilianofficers
+		x = 15
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_europeanmilitarydoctrine 
+		}
+		prerequisite = { 
+			focus = BRA_equipmentmodernisationprogram 
+		}
+		completion_reward = { 
+		swap_ideas = {
+		remove_idea = BRA_Army_for_Internal_Security_III
+		add_idea = BRA_Army_for_Internal_Security_II
+			}
+		}
+	}
+
+	#Focus for American military cooperation
+	focus = {
+		id = BRA_americanmilitarycooperation
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 13
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_usabrazilcooperation 
+		}
+		prerequisite = { 
+			focus = BRA_commissionnewlieutenants 
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = BRA_Army_for_Internal_Security_II
+		add_idea = BRA_Army_for_Internal_Security_IV
+			}
+		}
+	}
+
+	#Focus for Estado Novo
+	focus = {
+		id = BRA_estadonovo
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 8
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_legacyofoldrepublic }
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	#Focus for Brazilian-German cooperation
+	focus = {
+		id = BRA_braziliangermancooperation
+		icon = GFX_focus_chi_mission_to_germany
+		x = 12
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_berlinfunding 
+		}
+		prerequisite = { 
+			focus = BRA_disbandallpoliticalparties 
+		}
+		completion_reward = { 
+		add_timed_idea = { 
+			idea = BRA_Germany_Brazil 
+			days = 1095
+			}
+		}
+	}
+
+	#Focus for Order artillery from KRUPP
+	focus = {
+		id = BRA_orderartilleryfromkrupp
+		icon = GFX_brazilgerartillery
+		x = 13
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_equipmentmodernisationprogram 
+		}
+		prerequisite = { 
+			focus = BRA_berlinfunding 
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+        type = artillery_equipment_1
+        amount = 200
+        producer = GER	
+    }		
+		army_experience = 5
+		add_tech_bonus = {
+				name = FRA_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	#Focus for Berlin Funding
+	focus = {
+		id = BRA_berlinfunding
+		icon = GFX_brazilianfunding
+		x = 12
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_vargasera }
+		completion_reward = {
+			add_tech_bonus = {
+			name = BRA_four_year_plan
+			bonus = 1.0
+			uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+				technology = construction3
+				technology = construction4
+				technology = construction5
+			}
+		}
+	}
+
+	#Focus for Vargas Era
+	focus = {
+		id = BRA_vargasera
+		icon = GFX_vargas
+		x = 11
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_legacyofoldrepublic }
+		completion_reward = {
+		add_political_power = 50}
+	}
+
+	#Focus for Coup d'état
+	focus = {
+		id = BRA_coupdtat
+		icon = GFX_hiddenfactories
+		x = 1
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus =  BRA_civs_3
+		}
+		prerequisite = { 
+			focus = BRA_ports 
+		}
+		completion_reward = {
+		495 = {
+		add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+
+	#Focus for Legacy of Old Republic
+	focus = {
+		id = BRA_legacyofoldrepublic
+		icon = GFX_brazilrepublic
+		x = 10
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = 100 
+		}
+	}
+
+	#Focus for Order American Tanks
+	focus = {
+		id = BRA_orderamericantanks
+		icon = GFX_goal_continuous_armor_production
+		x = 18
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_moderntankresearch }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				OR = {
+					has_tech = improved_medium_tank
+					has_tech = advanced_light_tank		
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = { limit = { has_tech = improved_medium_tank } 
+				add_equipment_to_stockpile = {
+					type = medium_tank_equipment_2
+					amount = 500
+				}
+			}
+			if = { limit = { has_tech = advanced_light_tank	 } 
+				add_equipment_to_stockpile = {
+					type = light_tank_equipment_3
+					amount = 750
+				}		
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	#Focus for Group 1 and 2 deliveries.
+	focus = {
+		id = BRA_group1and2deliveries
+		icon = GFX_brazileq12
+		x = 16
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_orderamericancostalartillery }
+		ai_will_do = {
+			factor = 1
+		}
+				available = {
+            has_tech = motorised_infantry
+		}
+				completion_reward = {
+					add_equipment_to_stockpile = {
+        type = motorized_equipment_1
+        amount = 500
+        }
+				add_equipment_to_stockpile = {
+        type = support_equipment_1
+        amount = 500
+        }		
+	  }
+		
+	}
+
+	#Focus for Order infantry equipment
+	focus = {
+		id = BRA_orderinfantryequipment
+		icon = GFX_infeqshipment
+		x = 15
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_group1and2deliveries }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+         OR = {
+		has_tech = advanced_infantry_weapons
+		has_tech = improved_infantry_weapons
+		has_tech = infantry_weapons1
+		}
+		}
+		
+		completion_reward = {		
+		if = { 
+		limit = { has_tech = advanced_infantry_weapons }
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_3
+							amount = 25000
+        }}
+		else_if = {
+		limit = { has_tech = improved_infantry_weapons }
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_2
+							amount = 25000
+        }}		
+		else = {
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 25000
+        }
+		}
+		}
+    }
+
+	#Focus for Order american Artillery
+	focus = {
+		id = BRA_orderamericanartillery
+		icon = GFX_americanartillery
+		x = 17
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_group1and2deliveries }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_tech = artillery1
+			has_tech = interwar_antiair
+			has_tech = antitank2
+		}		
+		completion_reward = {
+		army_experience = 25				
+		add_equipment_to_stockpile = {
+        type = artillery_equipment_2
+        amount = 500
+       }				
+		add_equipment_to_stockpile = {
+        type = anti_air_equipment_1
+        amount = 600
+       }
+		add_equipment_to_stockpile = {
+        type = anti_tank_equipment_2
+        amount = 500
+       }	   
+		}
+	}
+
+	#Focus for Força Expedicionária Brasileira
+	focus = {
+		id = BRA_foraexpedicionriabrasileira
+		icon = GFX_brazilicobras
+		x = 11
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_gericinomaneuvercamp focus = BRA_prepareforthewaroverseas 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+				name = SAF_prepare_overseas_offensive
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+		}
+		add_ideas = Specilized_force
+		}
+	}
+
+	#Focus for Order American costal artillery
+	focus = {
+		id = BRA_orderamericancostalartillery
+		icon = GFX_braziliacostalarty
+		x = 16
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_reinforcethebulge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}		
+						add_tech_bonus = {
+				name = BRA_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}	
+	}
+
+	#Focus for Prepare for the war overseas
+	focus = {
+		id = BRA_prepareforthewaroverseas
+		icon = GFX_brazilianmarines
+		x = 11
+		y = 10
+		cost = 16
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_reinforcethebulge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = BRA_truck
+				ahead_reduction = 2
+				bonus = 2.0
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = BRA_marines
+				ahead_reduction = 2				
+				bonus = 2.00
+				uses = 1
+				category = marine_tech
+			}
+		}
+	}
+
+	#Focus for Northern Garrison
+	focus = {
+		id = BRA_northerngarrison
+		icon = GFX_brazilianmobilization
+		x = 13
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_reinforcethebulge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = Lacking_military_expenses
+		add_idea = Lacking_military_expenses_II
+			}
+		}
+	}
+
+	#Focus for Request Fighter planes
+	focus = {
+		id = BRA_requestfighterplanes
+		icon = GFX_focus_chi_flying_tigers
+		x = 16
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BRA_establishindependentairforce 
+		}
+				available = {
+			has_tech = fighter2
+		}
+		prerequisite = { 
+			focus = BRA_americanmilitarycooperation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {		
+		             add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 200 }
+	}
+	}
+
+	#Focus for Gomes training program
+	focus = {
+		id = BRA_gomestrainingprogram
+		icon = GFX_goal_generic_army_doctrines
+		x = 19
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_panamericanairfields }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+          add_ideas = BRAAF
+		}
+	}
+
+	#Focus for Pan American airfields
+	focus = {
+		id = BRA_panamericanairfields
+		icon = GFX_brazilianairports
+		x = 19
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_establishindependentairforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {		
+		if = {limit = { 498 = { is_owned_and_controlled_by = BRA} }
+			498 = {
+				add_building_construction = {
+				type = air_base
+				level = 4
+				instant_build = yes
+					}
+				}
+			497 = {
+				add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+					}
+				}
+			499 = {
+				add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+					}
+				}
+			}
+						add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			
+		}
+	}
+
+	#Focus for Reinforce "The Bulge"
+	focus = {
+		id = BRA_reinforcethebulge
+		icon = GFX_brazilianbulge
+		x = 13
+		y = 8
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_jointdefenseprogram }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = BRA
+								is_in_faction_with = BRA
+							}
+							has_full_control_of_state = 498
+						}
+					}
+					498 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_Bulge_Radio
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
+		}
+	}
+
+	#Focus for Modern tank research
+	focus = {
+		id = BRA_moderntankresearch
+		icon = GFX_tankresearch
+		x = 18
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_armymotorization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_tech = basic_light_tank }		}
+				set_technology = {
+					basic_light_tank = 1
+				}			 
+            }
+			if = {
+				limit = { NOT = { has_tech = improved_light_tank }		}
+				set_technology = {
+					improved_light_tank = 1
+				}			 
+            }			 
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	#Focus for Army motorization
+	focus = {
+		id = BRA_armymotorization
+		icon = GFX_braziltruck
+		x = 18
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_europeanmilitarydoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = { limit = { not = { has_tech = motorised_infantry } }
+				set_technology = {
+					motorised_infantry = 1
+				}
+			}
+			add_tech_bonus = {
+				name = SAF_q_services_corps
+				bonus = 1.0
+				uses = 2
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+				technology = mechanised_infantry
+				technology = mechanised_infantry2
+				technology = mechanised_infantry3
+				technology = amphibious_mechanized_infantry
+				technology = amphibious_mechanized_infantry_2
+			}
+			add_tech_bonus = {
+				name = land_doctrine
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Joint defense program
+	focus = {
+		id = BRA_jointdefenseprogram
+		icon = GFX_brapropaganda
+		x = 13
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_americanmilitarycooperation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = BRA_Army_for_Internal_Security_IV 
+		add_research_slot = 1
+		}
+	}
+
+	#Focus for Request bombers
+	focus = {
+		id = BRA_requestbombers
+		icon = GFX_brazilianboomers
+		x = 16
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_requestfighterplanes }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+	
+		}
+
+		available = {
+			has_tech = naval_bomber1
+		}		
+		completion_reward = {		
+		             add_equipment_to_stockpile = { type = nav_bomber_equipment_1 amount = 100 producer = USA }
+		             add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 100 producer = USA }
+	}		
+	}
+
+	#Focus for Northeast training site
+	focus = {
+		id = BRA_northeasttrainingsite
+		icon = GFX_trainingsite
+		x = 13
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_northerngarrison }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = Unexperienced_army		
+		swap_ideas = {
+		remove_idea = Lacking_military_expenses_II 
+		add_idea = Lacking_military_expenses_III
+			}
+		}
+	}
+
+	#Focus for Gericino Maneuver camp
+	focus = {
+		id = BRA_gericinomaneuvercamp
+		icon = GFX_braziltraining
+		x = 13
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_northeasttrainingsite }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		remove_ideas = Lacking_military_expenses_III
+		}
+	}
+	
+	focus = {
+		id = BRA_IhadasCobras
+		icon = GFX_goal_generic_construct_naval_dockyard 
+		x = 7
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BRA_indutrialexpansions }		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ENG_expand_the_repair_yards		
+		500 = {
+		add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+					}
+		} }
+	}
+
+	focus = {
+		id = BRA_ASWbrazil
+		icon = GFX_goal_generic_navy_cruiser
+		x = 11
+		y = 7
+		cost = 5
+		available_if_capitulated = yes	
+		prerequisite = { focus = BRA_usabrazilcooperation }				
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_anti_submarine_training_school
+				bonus = 1.0
+				uses = 2
+				category = convoy_defense_tree
+			}
+			add_ideas = ENG_anti_submarine_training_school
+		}
+	}
+
+	focus = {
+		id = BRA_americandestroyers
+		icon = GFX_focus_generic_destroyer
+		x = 11
+		y = 8
+		cost = 5
+		available_if_capitulated = yes	
+		prerequisite = { focus = BRA_ASWbrazil }				
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+          load_oob = "BRA_destroyers"
+		}
+	}
+
+	focus = {
+		id = BRA_newnavalplan
+		icon = GFX_goal_generic_navy_cruiser
+		x = 3
+		y = 7
+		cost = 5
+		available_if_capitulated = yes	
+		prerequisite = { focus = BRA_civs_3 }				
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+        add_ideas = british_convoy_discount
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_oldnavyplan
+		icon = GFX_focus_service_overseas
+		x = 14
+		y = 2
+		cost = 8
+		available_if_capitulated = yes	
+		prerequisite = { focus = BRA_equipmentmodernisationprogram }				
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}		
+ 			add_tech_bonus = {
+				name = bra_waves_focus
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = ENG_secure_the_imperial_shipping_routes
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}	
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}			
+		}
+	}
+	
+
+#End of focuses 
+ }

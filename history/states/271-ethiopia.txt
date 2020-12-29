@@ -1,0 +1,35 @@
+
+state={
+	id=271
+	name="STATE_271"
+	resources={
+		rubber=2.000
+	}
+
+	history={
+		owner = ETH
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		victory_points = {
+			13318 3 
+		}
+		add_core_of = ETH
+		add_core_of IEA 1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		2009 4954 5010 5097 7912 12856 13311 13318 13320 13322 
+	}
+	manpower=5850000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

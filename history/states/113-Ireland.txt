@@ -1,0 +1,16 @@
+
+state={
+	id=113
+	name="STATE_113" # Leinster
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = SWI
+
+	}
+
+	provinces={
+		285 303 369 3342 3359 7377 11293 11303 
+	}
+}

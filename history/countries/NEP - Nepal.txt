@@ -1,0 +1,206 @@
+﻿capital = 323
+
+oob = "NEP_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_bomber = 1
+	early_fighter = 1	
+	superior_firepower = 1	
+}
+set_war_support = 0.15
+set_stability = 0.8
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+add_ideas = {
+    training_spirit
+	limited_conscription
+    NEP_policy_of_isolationism	
+    NEP_suppressed_religion	
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+create_country_leader = {
+	name = "Juddha Rana"
+	desc = "POLITICS_JUDDHA_RANA_DESC"
+	picture = "GFX_portrait_nepal_portrait_juddah_rana"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		stout_defender
+	}
+}
+
+create_corps_commander = {
+	name = "Noel Beresford-Peirse"
+	gfx = "GFX_RAJ_noel_beresford_peirse"
+	traits = { ranger trait_engineer trait_mountaineer harsh_leader }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = { hill_fighter infantry_leader commando }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { trait_mountaineer infantry_leader inflexible_strategist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+# 1939 Start #
+1939.1.1 = {
+
+	add_political_power = 1000
+	
+	#IDEAS
+	add_ideas = {
+        ###
+	}
+	remove_ideas = {
+		###
+	}
+
+	#FOCUSES
+	unlock_national_focus = NEP_father_of_industry
+    unlock_national_focus = NEP_modernization
+    unlock_national_focus = NEP_development
+	complete_national_focus = NEP_build_roads
+	complete_national_focus = NEP_nepal_plywood
+	complete_national_focus = NEP_match_factory
+	complete_national_focus = NEP_big_brain
+	complete_national_focus = NEP_improve_slc_board_of_examination
+	complete_national_focus = NEP_juddha_barun_yantra
+	complete_national_focus = NEP_reaffirm_friendship_with_britain
+	complete_national_focus = NEP_nepal_bank_limited
+	complete_national_focus = NEP_set_up_mhs_company
+	complete_national_focus = NEP_biratnagar_jute_mill
+	complete_national_focus = NEP_royal_nepalese_army
+	complete_national_focus = NEP_import_rifles
+	complete_national_focus = NEP_home_defense
+	complete_national_focus = NEP_british_gurkha_units
+
+	set_global_flag = x
+	oob = "NEP_1939"
+	
+	set_technology = {
+	#INFANTRY TECH:
+		support_weapons = 1
+		support_weapons2 = 1
+	    infantry_weapons = 1
+	    infantry_weapons1 = 1	
+		motorised_infantry = 1
+		armored_car1 = 1
+		tech_mountaineers = 1
+		tech_special_forces = 1
+	#SUPPORT TECH:
+	    tech_support = 1	
+	    tech_recon = 1
+	    tech_support = 1	
+        tech_field_hospital	= 1		
+	    tech_engineers = 1	
+	    tech_logistics_company = 1	
+	    tech_military_police = 1
+        tech_signal_company	= 1
+	    tech_maintenance_company = 1
+	#TANK TECH:		
+	    gwtank = 1	
+		basic_light_tank = 1	
+	#ARTILLERY TECH:		
+	    gw_artillery = 1	
+		interwar_artillery = 1
+		artillery1 = 1
+		artillery2 = 1
+		interwar_antiair = 1
+		antiair1 = 1
+		antiair2 = 1
+		interwar_antitank = 1
+		antitank1 = 1
+		antitank2 = 1
+	#ARMY DOCTRINE TECH:   
+		superior_firepower = 1
+	#NAVAL TECH:  		
+	#NAVY DOCTRINE TECH: 
+	#AIR TECH: 			
+	    early_fighter = 1
+	    cv_early_fighter = 1
+		fighter1 = 1
+		cv_fighter1 = 1
+        naval_bomber1 = 1
+	    cv_naval_bomber1 = 1
+		CAS1 = 1
+	    cv_CAS1 = 1
+		early_bomber = 1
+		heavy_fighter1 = 1
+		tactical_bomber1 = 1
+		strategic_bomber1 = 1
+	#AIR DOCTRINE TECH: 
+    #ELECTRONICS TECH: 
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_fire_control_system = 1
+    #INDUSTRY: 
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		excavation1 = 1
+		excavation2 = 1
+
+	}
+}

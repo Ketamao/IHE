@@ -1,0 +1,25 @@
+
+state={
+	id=661
+	name="STATE_661"
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 2
+
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		4117 4962 7154 10037 10884 11940 12082 13295 13297 13298 
+	}
+	manpower=17617
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

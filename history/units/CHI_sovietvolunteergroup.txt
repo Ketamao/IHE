@@ -1,0 +1,50 @@
+﻿air_wings = {
+	
+	605 = {
+		fighter_equipment_1 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_1 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_0 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_0 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+		fighter_equipment_0 =  {		
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_1 =  {
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_1 =  {
+				owner = "CHI" 
+				amount = 100
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_1 =  {
+				owner = "CHI" 
+				amount = 70
+				creator = "SWI"	
+			}
+        tac_bomber_equipment_0 =  {
+				owner = "CHI" 
+				amount = 30
+				creator = "SWI"	
+			}			
+	}
+}

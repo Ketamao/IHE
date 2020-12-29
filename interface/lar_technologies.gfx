@@ -1,0 +1,891 @@
+SpriteTypes = {
+
+	# technologies we need to override in DLC go in this file
+	
+	### scout_planes
+
+
+	SpriteType = {
+		name = "GFX_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/ger_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/ger_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/ita_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/ita_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/fra_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/fra_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/jap_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/jap_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/usa_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/usa_scout_plane_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_generic_scout_plane_2_medium"
+		texturefile = "gfx/interface/technologies/generic_scout_plane_2.dds"
+	}
+
+	###armored cars
+	SpriteType = {
+		name = "GFX_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/armored_car_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ENG_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ENG_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ENG_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/YUG_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/GER_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/GER_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/GER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/GER_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/FRA_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/FRA_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/FRA_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/FRA_AC3_AT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_USA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/USA_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/USA_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/USA_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/USA_AC3_AT.dds"
+	}
+	
+		SpriteType = {
+		name = "GFX_BRA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M1_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BRA_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}
+	
+		SpriteType = {
+		name = "GFX_PHI_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M1_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PHI_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PHI_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}	
+	
+		SpriteType = {
+		name = "GFX_MEX_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M1_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MEX_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MEX_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MEX_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_CUB_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ETH_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CUB_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CUB_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CUB_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SWE_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/SWE_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+	    name = "GFX_HOL_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/HOL_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/HOL_AC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HOL_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/CAN_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+	    name = "GFX_INS_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/HOL_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/HOL_AC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_INS_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/CAN_AC3_AT.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ROM_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ROM_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ROM_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ROM_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ROM_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ROM_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BEL_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/BEL_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/BEL_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BEL_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BEL_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/BEL_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BCO_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/BEL_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BCO_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/BEL_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BCO_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BCO_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/BEL_AC3_AT.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_AST_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/AST_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AST_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/AST_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_AST_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/AST_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_AST_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_AC3_AT.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ETH_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ETH_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/CHI_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/CHI_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CHI_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_BUL_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/BUL_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUL_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/BUL_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BUL_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/BUL_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_BUL_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/BUL_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/HUN_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/HUN_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HUN_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/HUN_AC3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_HUN_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/HUN_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_YUG_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/FRA_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_YUG_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/SOV_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_YUG_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/YUG_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POL_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/POL_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POL_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/POL_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POL_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/POL_AC3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/POL_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEP_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_RR_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEP_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEP_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_NEP_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/MON_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/MON_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/MON_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/MON_AC3_AT.dds"
+	}	
+	
+		SpriteType = {
+		name = "GFX_FIN_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/SWE_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FIN_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/MON_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FIN_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/MON_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FIN_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/FIN_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NOR_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_RR_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NOR_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NOR_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NOR_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_LAT_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/LAT_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ETH_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ETH_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ETH_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ETH_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ETH_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SPR_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/SPR_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SPR_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/SPR_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SPR_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/SPR_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SPR_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/GER_AC3_AT.dds"
+	}
+
+				SpriteType = {
+		name = "GFX_GRE_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_RR_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FIL_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/FIL_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FIL_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/FIL_AC2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GRE_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M3_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GRE_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GRE_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_M8_AC3_AT.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MAN_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/MAN_AC1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MAN_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MAN_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MAN_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/MAN_AC3_AT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_JAP_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIA_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/JAP_AC3_AT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/SOV_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/SOV_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/SOV_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/SOV_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC3_AT.dds"
+	}
+	
+		SpriteType = {
+		name = "GFX_IEA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IEA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IEA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IEA_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/ITA_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_RR_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/CAN_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAN_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CAN_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/CAN_AC3_AT.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/NZL_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NZL_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/NZL_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NZL_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/ALLIED_HUMBER_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_NZL_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/NZL_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/ALLIES_RR_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/RAJ_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RAJ_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/RAJ_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_RAJ_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/RAJ_AC3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC3_AT.dds"
+	}
+	
+		SpriteType = {
+		name = "GFX_IRQ_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/IRQ_AC1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRQ_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_IRQ_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_IRQ_armored_car_at_upgrade_medium"
+		texturefile = "gfx/interface/technologies/SAF_AC3_AT.dds"
+	}
+
+	### SPR
+
+	SpriteType = {
+		name = "GFX_SPR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SPA_smg_star_ru35.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SPR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_smg_emp.dds"
+	}		
+
+	SpriteType = {
+		name = "GFX_SPR_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SPR_Destroyer.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SPR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SPR_rifle_mauser1889.dds"
+
+    }	
+}

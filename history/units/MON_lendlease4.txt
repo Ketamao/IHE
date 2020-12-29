@@ -1,0 +1,95 @@
+﻿air_wings = {
+	
+	330 = {
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3				
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"		
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"				
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"				
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"				
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"				
+			}
+			start_experience_factor = 0.3					
+		fighter_equipment_1 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "YUG"			
+			}
+			start_experience_factor = 0.3					
+	}
+}

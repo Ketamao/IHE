@@ -1,0 +1,883 @@
+ideas = {
+	country = {
+
+		BELAF = {
+		           
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+			
+			picture = belaf
+
+		  modifier = {
+
+		  }			
+            
+			research_bonus = {
+				air_doctrine = 0.5
+			}
+		}
+
+		BEL_leadershipcrisis = {
+			picture = leadershipcrisis
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.45			
+				war_support_factor = -0.35
+				stability_factor = -0.25			
+			}
+		
+
+        }
+		
+		BEL_leadershipcrisis_2 = {
+			picture = leadershipcrisis
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.40		
+				war_support_factor = -0.30
+				stability_factor = -0.20			
+			}
+		
+
+        }
+		
+		BEL_inflexible = {
+			picture = inflexible
+			allowed = {
+				original_tag = BEL
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1000.00
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 10
+			}
+		}		
+
+
+		BEL_governmentoftwo = {
+			picture = eng_the_sun_never_sets
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {			
+				democratic_drift = 0.1
+				stability_factor = 0.05	
+                legitimacy_daily = 0.10				
+			}
+        }
+		
+		BEL_governmentoffour = {
+			picture = eng_the_sun_never_sets
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {			
+				democratic_drift = 0.2
+				stability_factor = 0.10
+				max_planning = 0.10	
+                legitimacy_daily = 0.20			
+			}
+		
+
+        }
+
+
+	
+		BEL_plan_de_man = {
+			picture = plan_de_man
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {			
+				consumer_goods_factor = -0.10				
+			}
+		
+
+        }
+	
+		BEL_aftermath = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_speed_buildings_factor = -0.10			
+				political_power_cost = 0.15
+				consumer_goods_factor = 0.25				
+			}
+		}
+
+				BEL_aftermath_2 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_speed_buildings_factor = -0.05			
+				political_power_cost = 0.05
+				consumer_goods_factor = 0.25				
+			}
+		}
+		
+						BEL_aftermath_3 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				political_power_cost = 0.05
+				consumer_goods_factor = 0.15				
+			}
+		}
+		
+		BEL_gold_reserve = {
+			picture = golden_reserve
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15			
+			}
+		}
+		
+		BEL_mobilization = {
+			picture = idea_generic_reserve_divisions
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.3			
+				mobilization_speed = 0.5			
+			}
+		}
+		
+		
+		BEL_obsolete_doctrine = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = belgian_doctrine
+			
+			research_bonus = {
+                artillery = -0.50					
+				land_doctrine = -0.30
+			}
+					equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+	     }	
+		 
+		 BEL_fear = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_banned
+			
+			research_bonus = {		
+				armor = -0.50
+			}
+			modifier = {
+				democratic_drift = 0.1
+				war_support_factor = -0.05						
+			}
+	     }
+
+		 BEL_wartax = {
+			picture = generic_foreign_capital
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = golden_reserve
+			
+			modifier = {
+				industrial_capacity_factory = 0.1			
+				consumer_goods_factor = -0.10
+				war_support_factor = -0.1				
+			}
+		
+
+        }
+		BEL_colonial_army = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = congmen
+		 
+			modifier = {
+				conscription_factor = -0.75
+			}
+		}
+		BEL_colonial_army_II = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1 
+			
+			picture = congmen
+		 
+			modifier = {
+				conscription_factor = -0.65
+			}
+		}
+ }		
+# MILITARY
+
+
+	political_advisor = {
+
+		BEL_paul_van_zeeland = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { silent_workhorse }
+		}
+		
+		BEL_AlbertdeVleeschauwer = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { prince_of_terror }
+
+			available = {
+				has_completed_focus = BEL_congonegotiations
+			}
+			
+		}		
+
+		BEL_paul-henri_spaak = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		BEL_gaston_eyskens = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { armaments_organizer }
+			
+			available = {
+				has_completed_focus = BEL_governmentoffour 
+			}
+		}
+	}
+
+	army_chief = {
+
+		BEL_victor_strydonck_burkel = {
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BEL_leon_degrelle = {
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BEL_charles_bastin = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		BEL_jules_iserentant = {
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BEL_raoul_overstraeten = {
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { air_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		BEL_fritz_conrad = {
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BEL_georges_vereecken = {
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+		BEL_victor_van_strydonck_de_burkel = {
+		ledger = army	
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		BEL_oscar_michiels = {
+            ledger = army
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NZL_h_d_mcgregor = {
+            ledger = army
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { air_airborne_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BEL_rene_lagrou = {
+            ledger = air
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BEL_yvan_gerard = {
+            ledger = navy
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		BEL_jules_pire = {
+	        ledger = army		
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		BEL_fritz_lob = {
+			ledger = air
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		BEL_georges_deffontaine = {
+            ledger = navy
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+	tank_manufacturer = {
+
+		designer = yes
+	
+		# TECHNOLOGY
+		BEL_renault_fra = {
+		
+			picture = renault
+			
+			allowed = {
+				original_tag = BEL
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					reliability = -0.05
+					armor_value = 0.50
+			}
+			}
+		}
+	
+		BEL_AMX = {
+		
+			picture = generic_tank_manufacturer_2
+						
+			allowed = {
+				original_tag = BEL
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { fast_tank_manufacturer }
+		}
+		BEL_hotchkiss = {
+		
+			picture = generic_tank_manufacturer_3
+						
+			allowed = {
+				original_tag = BEL
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { cruiser_tank_manufacturer }
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					reliability = -0.05
+					armor_value = 0.50
+			}
+			}
+		}
+
+		BEL_somua_tank = {
+			picture = somua
+						
+			allowed = {
+				original_tag = BEL
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { cavalry_tank_manufacturer }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					reliability = -0.10
+					armor_value = 0.10
+			}
+			}
+		}
+		BEL_APX = {
+			picture = FRA_atelier_puteaux
+			
+
+			available = {
+				
+			}
+						
+			allowed = {
+				original_tag = BEL
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { infantry_tank_manufacturer }
+		}
+		BEL_vickers_tds = {
+			picture = vickers_armstrong_eng
+						
+			allowed = {
+				original_tag = BEL
+			}
+
+            cost = 50			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { assault_gun_manufacturer }
+
+		}		
+	}
+
+	aircraft_manufacturer = {
+	
+		designer = yes
+		
+		avions_fairey = {
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# Tipsy B, firefly, fairey fox
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		renard = {
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# Tipsy B, firefly, fairey fox
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		cockerill = { 
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+						
+			traits = { naval_manufacturer }
+		}
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		fn_herstol = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			
+			allowed = {
+				original_tag = BEL
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	}
+}

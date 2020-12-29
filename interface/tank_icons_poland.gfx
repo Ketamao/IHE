@@ -1,0 +1,252 @@
+spriteTypes = {	
+
+	###
+	SpriteType = {
+		name = "GFX_POL_gwtank_medium"
+		texturefile = "gfx/interface/technologies/POL_INT.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_LT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/POL_LT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2_SPG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_POL_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/POL_LT1_SPG.dds"
+	}
+	###
+	SpriteType = {
+		name = "GFX_POL_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2_SPG.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_POL_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2_SPG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_LT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/POL_LT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_LT2_SPG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_MT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/POL_MT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/HUN_MT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/SOV_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_MT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/POL_MT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/HUN_MT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/SOV_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_MT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/POL_MT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/POL_MT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/SOV_MT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_MT.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_POL_modern_td_medium"
+		texturefile = "gfx/interface/technologies/POL_MT_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_modern_art_medium"
+		texturefile = "gfx/interface/technologies/POL_MT_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_modern_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_MT_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_basic_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_HT2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/POL_HT2_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/POL_HT2_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_improved_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_HT3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/POL_HT3_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/POL_HT3_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_advanced_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1_SPAAG.dds"
+	}
+
+	###
+	SpriteType = {
+		name = "GFX_POL_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_SH.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_super_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/POL_SH_AT.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_SH_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_super_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/POL_HT1_SPAAG.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POL_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_AMP.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POL_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/POL_AMP2.dds"
+	}
+			SpriteType = {
+		name = "GFX_POL_airborne_tank_medium"
+		texturefile = "gfx/interface/technologies/POL_ATT.dds"
+	}
+}

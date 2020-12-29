@@ -1,0 +1,32 @@
+state={
+	id=739
+	name="STATE_739"
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 1
+
+			1869 = {
+				naval_base = 1
+
+			}
+
+
+		}
+		add_core_of = CAN
+		1938.10.25 = {
+			owner = USA
+			buildings = {
+				dockyard = 1
+			}
+		}
+	}
+
+	provinces={
+		1869
+	}
+	manpower=12684
+	buildings_max_level_factor=1	
+	state_category="small_island"
+}

@@ -1,0 +1,591 @@
+ideas = {
+
+    country = { 
+	
+		CUB_provisional_government = {
+			picture = received_attache
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				political_power_cost = 1	
+                research_speed_factor = 0.10				
+			}
+		}
+		
+		CUB_puppet_regime = {
+			picture = pheco
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    democratic_drift = 0.05		
+				political_power_cost = 0.75
+                production_speed_buildings_factor = 0.10				
+			}
+		}
+		
+		CUB_puppet_regime2 = {
+			picture = pheco
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                democratic_drift = 0.05			
+				political_power_cost = 0.60
+                production_speed_buildings_factor = 0.10	
+                #industrial_capacity_factory = 0.05					
+			}
+		}
+
+		CUB_puppet_regime3 = {
+			picture = pheco
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                democratic_drift = 0.05
+                industrial_capacity_factory = 0.1				
+			}
+		}		
+
+		CUB_schools = {
+			picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+                research_speed_factor = 0.10				
+			}
+		}		
+
+		CUBRAF = {
+		           
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+			
+			picture = usaaf		
+            
+			research_bonus = {
+				air_doctrine = 0.5
+			}
+		}
+		
+		CUB_nine_cent = {
+			picture = CUB_nine
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_arms_factory_factor = 0.1	
+				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+
+		CUB_charbourne = {
+			picture = GRE_tobacco_trade
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				consumer_goods_factor = -0.20
+			}
+		}
+
+		CUB_lowsupport = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				stability_factor = -0.10
+				war_support_factor = -0.1				
+			}
+		}
+		CUB_badsupport = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				stability_factor = -0.05
+				war_support_factor = -0.05				
+			}
+		}		
+	}
+
+	political_advisor = {
+
+		CUB_carlos_prio = {
+
+			picture = generic_political_advisor_south_america_1
+
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		CUB_gerardo_machado = {
+
+			picture = generic_political_advisor_south_america_3
+			
+			cost = 50
+				
+			allowed = {
+				original_tag = CUB
+			}
+			
+			available = {
+				has_completed_focus = CUB_new_cultural_program
+			}			
+			
+			traits = { silent_workhorse }
+		}
+
+		CUB_eugenio_molinet_castro = {
+
+			picture = generic_political_advisor_south_america_2
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+
+	army_chief = {
+
+		CUB_salvador_castaneda_castro = {
+
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = CUB
+			}		
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CUB_fulgencio_batista = {
+
+			picture = generic_army_south_america_5
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		CUB_palaez_menendez = {
+
+			picture = generic_air_south_america_3
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CUB_domingo_r_del_toro = {
+
+			picture = generic_air_south_america_1
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		CUB_rodrigo_a_fuentes = {
+
+			picture = generic_navy_south_america_3
+			
+			allowed = {
+				original_tag = CUB
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CUB_sandalio_junco = {
+
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = CUB
+			}
+					
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		CUB_juan_blas_hernandez = {
+			ledger = army
+			picture = generic_army_south_america_1
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CUB_fidel_castro = {
+            ledger = army
+			picture = generic_army_south_america_3
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CUB_enrique_c_rolas = {
+            ledger = air
+			picture = generic_air_south_america_1
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CUB_angel_gonzalez = {
+            ledger = army
+			picture = generic_navy_south_america_2
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		CUB_american_mexican_tanks = {
+
+			picture = chrysler
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CUB_marmon_herrington = {
+			picture = marmon_herrington
+			
+			allowed = {
+				original_tag = CUB
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { pacific_light_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		CUB_ford_tank_department = {
+			picture = ford_motor_company
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}			
+	}
+
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		CUB_norfolk_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+            picture = norfolk_naval_yard
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		CUB_electric_boat_company = {
+			
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+            picture = electric_boat_company
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		CUB_brooklyn_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+            picture = brooklyn_naval_yard
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		CUB_newport_news_shipbuilding = {
+			
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+            picture = newport_news_shipbuilding
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+
+	theorist = {
+		CUB_eduardo_chibas = {
+			ledger = army
+			picture = generic_army_south_america_3
+
+			allowed = {
+				original_tag = CUB
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		CUB_julio_sanguily = {
+            ledger = navy
+			picture = generic_navy_south_america_3
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		CUB_sergio_carbo = {
+            ledger = air
+			picture = generic_air_south_america_2
+			
+			allowed = {
+				original_tag = CUB
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}

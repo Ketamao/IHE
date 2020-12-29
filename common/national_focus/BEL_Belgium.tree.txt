@@ -1,0 +1,1770 @@
+focus_tree = {
+	id = Belgium.tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BEL
+		}
+	}
+	#Focus for Colonial trade fleet
+	focus = {
+		id = BEL_colonialtradefleet
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_capitulated = yes
+			has_full_control_of_state = 295				
+		}		
+		prerequisite = { focus = BEL_colonialminingindustry }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+			6 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 6560
+						level = 2
+						instant_build = yes
+					}
+				add_building_construction = {
+					add_extra_state_shared_building_slots = 1				
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}					
+				}
+			}
+			295 = {
+				if = {
+					limit = { is_controlled_by = ROOT }			
+				add_building_construction = {			
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}}				
+			}
+		}
+	}
+
+	#Focus for The Franco-Belgian Strategy
+	focus = {
+		id = BEL_thefrancobelgianstrategy
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 10
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10	
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+	}
+	}
+
+	#Focus for Defensive Force
+	focus = {
+		id = BEL_defensiveforce
+		icon = GFX_goal_generic_defence
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_policyofneutrality }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+				set_technology = {
+					bicycle_infantry = 1
+				}
+			add_ideas = HOL_domestic_vehicle_designs	
+		}
+		
+	}
+
+
+	#Focus for Air force in exile
+	focus = {
+		id = BEL_airforceinexile
+		icon = GFX_focus_usa_escort_fighters
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BEL_belgiantraineraircraft 
+			focus = BEL_studyforeignfighters 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_capitulated = yes
+		}
+		
+				completion_reward = {		
+		     add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 100 }	 
+	}
+		
+	}
+
+	#Focus for Study foreign fighters
+	focus = {
+		id = BEL_studyforeignfighters
+		icon = GFX_goal_generic_build_airforce
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_thearonautiquemilitairebelge }
+		ai_will_do = {
+			factor = 1
+		}
+            completion_reward = {
+			air_experience = 200	
+			add_tech_bonus = {
+				name = HOL_protect_the_colonies
+				bonus = 1
+				uses = 1
+				category = naval_bomber
+			}		
+		}	
+	}
+
+	#Focus for Modernize fortifications
+	focus = {
+		id = BEL_modernizefortifications
+		icon = GFX_goal_generic_radar
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_reinforcefortebenemael }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+						add_tech_bonus = {
+				name = radio_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+		    }
+		
+		}
+		
+	}
+	
+	focus = {
+		id = BEL_teritorialaaguard
+		icon = GFX_focus_generic_air_defense
+		x = 0
+		y = 1
+		relative_position_id = BEL_modernizefortifications	
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_modernizefortifications }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+			6 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+
+	#Focus for Forces belges libres
+	focus = {
+		id = BEL_forcesbelgeslibres
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 17
+		y = 7
+		cost = 7
+		available_if_capitulated = yes		
+		prerequisite = { 
+			focus = BEL_jointalliedmilitarystaff 
+		}
+		prerequisite = { 
+			focus = BEL_governmentoffour 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		remove_ideas = GBP_nerf
+			army_experience = 200			
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 2
+				category = land_doctrine
+			}
+create_corps_commander = {
+	name = "Raoul Daufresne de la Chevalerie"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { infantry_leader commando naval_invader }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Victor van Strydonck de Burkel"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { cavalry_officer trickster urban_assault_specialist war_hero }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}			
+	    }
+		
+	}
+
+	#Focus for The Aéronautique Militaire Belge
+	focus = {
+		id = BEL_thearonautiquemilitairebelge
+		icon = GFX_goal_generic_air_fighter2
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	      available = { threat > 0.1 }
+		  
+		  completion_reward = {
+		  add_ideas = BELAF
+		  add_tech_bonus = {
+				name = BEL_airforce
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			} }
+	}
+
+	#Focus for Mobile reserve
+	focus = {
+		id = BEL_mobilereserve
+		icon = GFX_goal_generic_army_motorized
+		x = 10
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_emergencyrearmamentprogram }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				bonus = 1.0
+				category = armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_timed_idea = { idea = BEL_mobilization days = 120 }		
+				add_ideas = extensive_conscription
+		}
+	}
+
+	#Focus for Light Tank Hunters
+	focus = {
+		id = BEL_lighttankhunters
+		icon = GFX_goal_generic_production2
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_orderacg1 }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 10		
+			set_technology = {
+				basic_light_td = 1
+				improved_light_td = 1
+			}
+		}
+		
+	}
+
+	#Focus for Quell strikes
+	focus = {
+		id = BEL_quellstrikes
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_rualroadworks }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+					 add_stability = 0.25
+			         add_war_support = 0.1					 
+		    }
+		
+
+		
+	}
+
+	#Focus for Economic boom
+	focus = {
+		id = BEL_economicboom
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 27
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_quellstrikes }
+		ai_will_do = {
+			factor = 1
+		}
+		
+	    completion_reward = {
+				add_offsite_building = { type = industrial_complex level = 3 }
+				
+	}	
+	}
+
+	#Focus for Bomba
+	focus = {
+		id = BEL_bomba
+		icon = GFX_focus_wonderweapons
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_umhkuraniumsale }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = BEL_the_smiling_buddha
+				bonus = 2.0
+				uses = 2
+				category = nuclear
+			}
+		}		
+	}
+
+	#Focus for Reinforce mandatory cultivation policy
+	focus = {
+		id = BEL_reinforcemandatorycultivationpolicy
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 27
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_assumedirectcontrolofcongo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					 add_stability = -0.05	
+			768 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			769 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			718 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			538 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			295 = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+
+	#Focus for Expand UMHK
+	focus = {
+		id = BEL_expandumhk
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_banqueducongobelge }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = HOL_make_use_of_our_riches		
+			295 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		    538 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		    718 = {
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+			}
+		    768 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+		    769 = {
+				add_resource = {
+					type = steel
+					amount = 9
+				}
+			}			
+			
+		}
+	}
+
+	#Focus for US trade agreement
+	focus = {
+		id = BEL_ustradeagreement
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 27
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_banqueducongobelge }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {		
+			add_ideas = POL_internationalism_focus
+			add_timed_idea = {
+				idea = democratic_influence
+				days = 360
+			}			
+		}
+	}
+
+	#Focus for Rual roadworks
+	focus = {
+		id = BEL_rualroadworks
+		icon = GFX_goal_generic_construction2
+		x = 27
+		y = 5
+		cost = 6
+		available_if_capitulated = yes
+		available = {
+			has_capitulated = yes
+			has_full_control_of_state = 295
+            has_full_control_of_state = 538	
+			has_full_control_of_state = 718
+            has_full_control_of_state = 768	
+			has_full_control_of_state = 769 					
+		}		
+		prerequisite = { focus = BEL_rualconscription }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+				295 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				538 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				718 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				768 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				769 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}				
+	     	}			
+		}
+
+	#Focus for Rual Conscription
+	focus = {
+		id = BEL_rualconscription
+		icon = GFX_focus_generic_little_entente
+		x = 25
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BEL_expandumhk 
+		}
+		prerequisite = { 
+			focus = BEL_ustradeagreement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 300
+						}			
+			         add_manpower = 50000			
+					 add_stability = -0.1				 
+		    }
+	}
+
+	#Focus for V for Victory
+	focus = {
+		id = BEL_vforvictory
+		icon = GFX_goal_generic_special_forces
+		x = 12
+		y = 8
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_belgianinformationcenter }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+				     add_war_support = 0.1			
+					 add_stability = 0.15				 
+		    }
+	}
+
+	#Focus for Belgian rubber
+	focus = {
+		id = BEL_belgianrubber
+		icon = GFX_focus_generic_rubber
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			if = { date > 1941.01.01 }
+			336 = { NOT = { is_owned_and_controlled_by = ENG} }
+			333 = { NOT = { is_owned_and_controlled_by = ENG} }				
+			}		
+		prerequisite = { 
+			focus = BEL_rualconscription 
+		}
+		prerequisite = { 
+			focus = BEL_expandumhk 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+						completion_reward = {
+			295 = {
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+			}
+		    538 = {
+				add_resource = {
+					type = rubber
+					amount = 11
+				}
+			}
+		    718 = {
+				add_resource = {
+					type = rubber
+					amount = 13
+				}
+			}			
+			
+			
+						add_tech_bonus = {
+				name = SAF_expand_the_mining_industry
+				bonus = 0.50
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+		
+	}
+
+	#Focus for Restrict the power of the workers
+	focus = {
+		id = BEL_restrictthepoweroftheworkers
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_plandeman }
+		ai_will_do = {
+			factor = 1
+		}
+		
+						completion_reward = {
+			   add_political_power = 100					
+						swap_ideas = {
+				remove_idea = BEL_aftermath
+				add_idea = BEL_aftermath_2		
+			}
+		}
+		
+	}
+
+	#Focus for Policy of neutrality
+	focus = {
+		id = BEL_policyofneutrality
+		icon = GFX_goal_generic_neutrality_focus
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_thefrancobelgianstrategy }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {		
+							GER = {
+						has_completed_focus = GER_rhineland
+					}
+	        }
+	    }
+
+       completion_reward = {
+		hidden_effect = {
+	      news_event = { id = belgium.1 days = 7 }
+             }	   
+			add_stability = 0.05 
+	    }		
+    }
+
+	#Focus for Belgo-Congolese colonial companies
+	focus = {
+		id = BEL_belgocongolesecolonialcompanies
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_plandeman }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = BEL_central_region_strategy
+				bonus = 1.0
+				uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+				technology = construction3
+				technology = construction4
+				technology = construction5
+			}			
+				295 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}				
+			}
+	}
+
+	#Focus for Reinforce Fort Eben-Emael
+	focus = {
+		id = BEL_reinforcefortebenemael
+		icon = GFX_goal_generic_construct_military
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_fortconstructionprogram }
+		ai_will_do = {
+			factor = 1
+		}
+		
+								completion_reward = {					
+			34 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					}			
+
+						add_building_construction = {
+							type = bunker
+							level = 8
+							province = 11519
+							instant_build = yes
+						}
+					}
+			}
+
+        } 
+
+	#Focus for K-W defensive line
+	focus = {
+		id = BEL_kwdefensiveline
+		icon = GFX_goal_generic_construct_civilian
+		x = 8
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_emergencyrearmamentprogram }
+		ai_will_do = {
+			factor = 1
+		}
+		
+								completion_reward = {					
+			6 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					}
+							add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11419
+							instant_build = yes
+						}
+							add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6598
+							instant_build = yes
+						}
+							add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6560
+							instant_build = yes
+						}						
+
+				}				
+			}
+	}
+
+	#Focus for Plan De Man
+	focus = {
+		id = BEL_plandeman
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = BEL_central_region_strategy
+				bonus = 1.0
+				uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+				technology = construction3
+				technology = construction4
+				technology = construction5
+			}		
+			6 = {
+				add_extra_state_shared_building_slots = 2
+			}		
+			add_ideas = BEL_plan_de_man
+		}
+	}
+	
+	focus = {
+		id = BEL_rearmament
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_plandeman }		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {		
+			34 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}				
+			}		
+		}
+	}
+	
+focus = {
+		id = BEL_reinforceforcepublique
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+		       BEL = {
+					has_full_control_of_state = 769
+					has_full_control_of_state = 538
+				}
+			}	
+		prerequisite = { focus = BEL_rearmament }		
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+			769 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}				
+			}
+			538 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}				
+			}			
+			army_experience = 100	
+          }				
+	  }		
+
+	#Focus for Fort construction program
+	focus = {
+		id = BEL_fortconstructionprogram
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_thefrancobelgianstrategy }
+		ai_will_do = {
+			factor = 1
+		}
+		
+				completion_reward = {
+						add_tech_bonus = {
+				name = shovel_bonus
+				bonus = 1.0
+				uses = 1
+				category = tech_engineers2
+				category = engineers_tech
+			}						
+			6 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					}
+							add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9574
+							instant_build = yes
+						}
+
+				}				
+			34 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					}			
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 13081
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 3516
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 11519
+							instant_build = yes
+						}
+					}
+			}
+	}
+
+	#Focus for Dismantle unions
+	focus = {
+		id = BEL_dismantleunions
+		icon = GFX_goal_generic_dangerous_deal
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_restrictthepoweroftheworkers }
+		ai_will_do = {
+			factor = 1
+		}
+
+						completion_reward = {					
+						swap_ideas = {
+				remove_idea = BEL_aftermath_2
+				add_idea = BEL_aftermath_3	
+			}
+		}
+	}
+
+	#Focus for Order ACG-1
+	focus = {
+		id = BEL_orderacg1
+		icon = GFX_goal_generic_army_tanks
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_policyofneutrality }
+		ai_will_do = {
+			factor = 1
+		}
+						completion_reward = {		
+						add_tech_bonus = {
+					name = med_armor_bonus
+					bonus = 1.0
+					ahead_reduction = 2
+					technology = basic_medium_tank
+				}
+		}
+	}
+
+	#Focus for Denounce Leopold's surrender
+	focus = {
+		id = BEL_denounceleopoldssurrender
+		icon = GFX_focus_rom_handle_king
+		x = 21
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		available = {
+			has_army_manpower = { size > 49999 }
+		}		
+		prerequisite = { focus = BEL_governmentoffour }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+			   add_political_power = 50					
+						swap_ideas = {
+				remove_idea = BEL_leadershipcrisis
+				add_idea = BEL_leadershipcrisis_2
+			}
+		}
+		
+	}
+
+	#Focus for CMBR
+	focus = {
+		id = BEL_cmbr
+		icon = GFX_goal_generic_army_doctrines
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+         OR = {
+		has_tech = advanced_infantry_weapons
+		has_tech = improved_infantry_weapons
+		has_tech = infantry_weapons1
+		}
+		}		
+		prerequisite = { focus = BEL_forcesbelgeslibres }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			add_manpower = 55000
+		add_tech_bonus = {
+				name = FRA_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}			
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}			
+		if = { 
+		limit = { has_tech = advanced_infantry_weapons }
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_3
+							amount = 10000
+        }}
+		else_if = {
+		limit = { has_tech = improved_infantry_weapons }
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_2
+							amount = 10000
+        }}		
+		else = {
+		add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 10000
+        }			
+			}
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}			
+		}
+		
+	}
+	
+	focus = {
+		id = BEL_liberation
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 17
+		y = 10
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_cmbr }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+					has_full_control_of_state = 6
+				}
+		completion_reward = {
+				set_capital = 6
+		}
+		
+	}
+
+	#Focus for Develop anti-armor doctrine
+	focus = {
+		id = BEL_developantiarmordoctrine
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		relative_position_id = BEL_lighttankhunters 
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_lighttankhunters }
+		ai_will_do = {
+			factor = 1
+		}
+				available = {
+			if = { date > 1939.01.01 } 
+			}
+			completion_reward = {
+			set_technology = {
+				advanced_light_td = 1
+			}
+			
+			add_tech_bonus = {
+				name = BEL_artillery_focus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}	
+	}
+	
+		focus = {
+		id = BEL_secretplan
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+		relative_position_id = BEL_defensiveforce
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_defensiveforce }
+		ai_will_do = {
+			factor = 1
+		}
+				available = {
+			}
+		completion_reward = {
+			army_experience = 30	
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+	}	
+	}
+
+	#Focus for Assume direct control of Congo
+	focus = {
+		id = BEL_assumedirectcontrolofcongo
+		icon = GFX_focus_generic_support_the_left_right
+		x = 27
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_congonegotiations }
+		ai_will_do = {
+			factor = 1
+		}
+				available = {
+			has_capitulated = yes
+			has_full_control_of_state = 295
+		}
+		
+			completion_reward = {
+				set_capital = 295
+			}
+		
+	}
+
+	#Focus for UMHK Uranium sale
+	focus = {
+		id = BEL_umhkuraniumsale
+		icon = GFX_goal_generic_trade
+		x = 24
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_belgianrubber }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			    completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+					}
+	 }
+		
+	
+
+	#Focus for 5th Special Air Service
+	focus = {
+		id = BEL_5thspecialairservice
+		icon = GFX_focus_eng_special_air_service
+		x = 19
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_cmbr }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bel_paratrooper_special_forces
+				bonus = 1.0
+				uses = 2
+				category = para_tech
+			}		
+			set_technology = {
+				airborne_tank = 1
+			}		
+			add_ideas = ENG_special_air_service_idea
+		}		
+	}
+
+	#Focus for Joint allied military staff
+	focus = {
+		id = BEL_jointalliedmilitarystaff
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 12
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_emergencyrearmamentprogram }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Evacuate the gold reserve
+	focus = {
+		id = BEL_evacuatethegoldreserve
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 18
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BEL_colonialtradefleet 
+		}
+		prerequisite = { 
+			focus = BEL_openupnewfactories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_capitulated = yes
+		}
+
+			completion_reward = {					
+			remove_ideas = BEL_plan_de_man
+			add_timed_idea = { idea = BEL_gold_reserve days = 1440 } 		
+
+		}
+	}
+
+	#Focus for No. 10 Commando
+	focus = {
+		id = BEL_no10commando
+		icon = GFX_goal_generic_amphibious_assault
+		x = 15
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_cmbr }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {		
+			add_tech_bonus = {
+				name = bel_amphibious_focus
+				bonus = 1.0
+				uses = 2
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = uk_amphibious_focus
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+		}		
+	}
+
+	#Focus for Open up new factories
+	focus = {
+		id = BEL_openupnewfactories
+		icon = GFX_goal_generic_construction2
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_dismantleunions }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = { date > 1938.04.01 } 
+			}
+			
+			completion_reward = {		
+			      remove_ideas = BEL_aftermath_3	
+		    }			
+		
+	}
+
+	#Focus for Emergency rearmament program
+	focus = {
+		id = BEL_emergencyrearmamentprogram
+		icon = GFX_goal_generic_build_tank
+		x = 10
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = {
+            focus = BEL_secretplan		
+			focus = BEL_lighttankhunters 
+			focus = BEL_modernizefortifications 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+				available = {
+			POL = { 
+				has_war_with = GER
+			}
+		}
+		
+				completion_reward = {
+		add_tech_bonus = {
+				name = FRA_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}				
+			if = {
+				limit = {	
+					has_war_support < 0.5
+				}
+				add_war_support = 0.1
+			}
+				add_ideas = war_economy
+				add_ideas = limited_conscription
+				remove_ideas = BEL_fear				
+		}
+		
+	}
+
+	#Focus for Move government to England
+	focus = {
+		id = BEL_movegovernmenttoengland
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 19
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_evacuatethegoldreserve }
+		ai_will_do = {
+			factor = 1
+		}
+
+						completion_reward = {
+		hidden_effect = {
+             add_ideas = BEL_leadershipcrisis
+             }
+                remove_ideas = BEL_inflexible			 
+				add_ideas = BEL_governmentoftwo
+		}
+		
+	}
+
+	#Focus for Government of Four
+	focus = {
+		id = BEL_governmentoffour
+		icon = GFX_goal_support_democracy
+		x = 21
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_movegovernmenttoengland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			   add_political_power = 100					
+						swap_ideas = {
+				remove_idea = BEL_governmentoftwo
+				add_idea = BEL_governmentoffour
+			}
+		}
+	}
+
+	#Focus for Belgian trainer aircraft
+	focus = {
+		id = BEL_belgiantraineraircraft
+		icon = GFX_goal_generic_air_production
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_thearonautiquemilitairebelge }
+		ai_will_do = {
+			factor = 1
+		}
+		
+				completion_reward = {
+				add_ideas = ROM_local_development
+					add_tech_bonus = {
+				name = fighter_research
+				bonus = 1.5
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			}				
+		}
+	}
+
+	#Focus for Colonial mining industry
+	focus = {
+		id = BEL_colonialminingindustry
+		icon = GFX_focus_generic_steel
+		x = 20
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_belgocongolesecolonialcompanies }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = BEL_expand_the_mining_industry
+				bonus = 1
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+		
+	}
+
+	#Focus for Take over Force Publique
+	focus = {
+		id = BEL_takeoverforcepublique
+		icon = GFX_focus_generic_military_mission
+		x = 29
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_assumedirectcontrolofcongo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_colonial_army
+				add_idea = BEL_colonial_army_II
+			}
+create_corps_commander = {
+	name = "Auguste Gilliaert"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { infantry_leader hill_fighter desert_fox harsh_leader logistics_wizard }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}			
+		}
+	}
+
+	#Focus for Moderate royalists in the army
+	focus = {
+		id = BEL_moderateroyalistsinthearmy
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 21
+		y = 8
+		cost = 4	
+		available_if_capitulated = yes
+		available = {
+			has_army_manpower = { size > 149999 }
+		}		
+		prerequisite = { focus = BEL_denounceleopoldssurrender }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+			   add_political_power = 50					
+				remove_ideas = BEL_leadershipcrisis_2		
+			}
+		}
+
+	#Focus for Galopin Committee
+	focus = {
+		id = BEL_galopincommittee
+		icon = GFX_focus_generic_self_management
+		x = 16
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_evacuatethegoldreserve }
+		ai_will_do = {
+			factor = 1
+		}
+		
+				available = {
+			has_capitulated = yes
+		}
+	    completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 8 }
+		GER = { add_offsite_building = { type = industrial_complex level = 3 }
+					}
+			  }
+
+	    }
+		
+
+	#Focus for Aviation militaire de la Force Publique
+	focus = {
+		id = BEL_aviationmilitairedelaforcepublique
+		icon = GFX_goal_generic_air_fighter2
+		x = 29
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_takeoverforcepublique }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				name = HOL_aviatic_aspirations
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}			
+		}
+		
+	}
+
+	#Focus for Congo negotiations
+	focus = {
+		id = BEL_congonegotiations		
+		icon = GFX_focus_chi_british_cooperation
+		x = 27
+		y = 0
+		cost = 5
+		available = {
+			has_capitulated = yes
+			has_full_control_of_state = 295
+            has_full_control_of_state = 538	
+			has_full_control_of_state = 718
+            has_full_control_of_state = 768	
+			has_full_control_of_state = 769 			
+
+		OR = {
+			has_idea = BEL_governmentoftwo	
+			has_idea = BEL_governmentoffour			
+		}
+			
+		}		
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {		
+				add_political_power = 50
+				295 = {
+				add_core_of = BEL
+				}
+				538 = {
+				add_core_of = BEL
+				}
+				718 = {
+				add_core_of = BEL
+				}
+				768 = {
+				add_core_of = BEL
+				}
+				769 = {
+				add_core_of = BEL
+				}
+				add_ideas = BEL_colonial_army
+		}		 
+	}
+
+	#Focus for Banque du Congo Belge
+	focus = {
+		id = BEL_banqueducongobelge
+		icon = GFX_focus_mex_privatisation
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_assumedirectcontrolofcongo }
+		ai_will_do = {
+			factor = 1
+		}
+		
+					    completion_reward = {
+			add_tech_bonus = {
+				name = BEL_the_four_year_plan
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}						
+						add_tech_bonus = {
+				name = SAF_expand_the_mining_industry
+				bonus = 0.50
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}						
+		add_offsite_building = { type = industrial_complex level = 3 }
+		
+					}
+		
+	}
+
+	#Focus for Belgian Information Center
+	focus = {
+		id = BEL_belgianinformationcenter
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_jointalliedmilitarystaff }
+		ai_will_do = {
+			factor = 1
+		}
+						available = {
+			has_capitulated = yes
+			has_idea = BEL_gold_reserve		
+		}
+
+					completion_reward = {		
+			   add_political_power = 150
+		 }
+	}
+
+	#Focus for War Tax
+	focus = {
+		id = BEL_wartax
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 25
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_banqueducongobelge }
+		ai_will_do = {
+			factor = 1
+		}
+		
+			completion_reward = {
+			add_ideas = BEL_wartax
+		    }
+		
+	}
+
+	#Focus for Domestic arms
+	focus = {
+		id = BEL_domesticarms
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BEL_aviationmilitairedelaforcepublique }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 2
+				bonus = 1.0
+				category = armor
+			}
+					add_offsite_building = {
+							type = arms_factory
+							level = 3
+						}
+		}
+		
+	}
+
+#End of focuses 
+ }

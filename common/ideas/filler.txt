@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+
+		FIL_death_before_surrender = {
+
+			name = SPR_death_before_surrender
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 100
+				
+			}
+		}
+	}
+}

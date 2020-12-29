@@ -1,0 +1,339 @@
+﻿capital = 439
+
+oob = "RAJ_1936"
+
+
+set_stability = 0.6
+set_war_support = 0.1
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	electronic_mechanical_engineering = 1
+	armored_car1 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	transport = 1
+	superior_firepower = 1
+	fleet_in_being = 1
+	CAS1 = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+    fighter1 = 1	
+	early_bomber = 1	
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_cruiser = 1	
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_ideas = {
+		RAJ_princely_states
+		RAJ_marginalized_muslim_community
+		RAJ_agrarian_society
+		RAJ_risk_of_famine
+	    training_spirit	
+	}
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_convoys = 50
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "County Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+		}
+	}
+}
+
+set_cosmetic_tag = RAJ_UK # British Raj
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 17
+	fascism = 2
+	communism = 1
+	neutrality = 80
+}
+
+create_country_leader = {
+	name = "Lord Linlithgow"
+	desc = "POLITICS_LORD_LINLITHGOW_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+# REVISIT Unclear if appropriate for this ideology
+create_country_leader = {
+	name = "V. D. Savarkar"
+	desc = "POLITICS_VD_SAVARKAR_DESC"
+	picture = "GFX_RAJ_veer_savarkar"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "P. Krishna Pillai"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "GFX_RAJ_krishna_pillai"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "B. P. Sitaramayya"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "GFX_RAJ_pattabhi_sitaramayya"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Noel Beresford-Peirse"
+	gfx = "GFX_RAJ_noel_beresford_peirse"
+	traits = { panzer_leader trait_engineer cavalry_leader harsh_leader }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = { hill_fighter infantry_leader commando ranger }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { desert_fox ambusher infantry_leader inflexible_strategist trait_mountaineer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+1939.1.1 = {
+
+	add_political_power = 1100
+	
+	#IDEAS
+	add_ideas = {
+        ###
+	}
+	remove_ideas = {
+		###
+	}
+
+	#FOCUSES
+		complete_national_focus = RAJ_lessons_of_the_great_war
+		complete_national_focus = RAJ_vickers_berthier_gun
+		complete_national_focus = RAJ_army_motorization
+		complete_national_focus = RAJ_british_pilot_training
+		complete_national_focus = RAJ_great_indian_peninsula_railway
+		complete_national_focus = RAJ_east_india_railways
+		complete_national_focus = RAJ_found_scindia_shipyard
+		complete_national_focus = RAJ_industrial_expansion
+		complete_national_focus = RAJ_ishapore_arsenal
+		complete_national_focus = RAJ_expand_mazagon_dock
+		complete_national_focus = RAJ_royal_indian_navy	
+		complete_national_focus = RAJ_integrate_princely_railways
+		complete_national_focus = RAJ_assam_oil
+		complete_national_focus = RAJ_tata_steel
+		complete_national_focus = RAJ_indian_institute_of_science	
+		complete_national_focus = RAJ_expand_air_bases
+		complete_national_focus = RAJ_provincial_elections
+		complete_national_focus = RAJ_indian_national_congress		
+		complete_national_focus = RAJ_cripps_mission	
+		complete_national_focus = RAJ_princely_state_donations
+		complete_national_focus = RAJ_two_nation_theory
+		complete_national_focus = RAJ_quit_india_movement		
+		complete_national_focus = RAJ_strengthen_ties_with_british_investors
+		complete_national_focus = RAJ_british_arms_investors
+		complete_national_focus = RAJ_british_rail_investors
+		
+		unlock_national_focus = RAJ_indianisation_of_army
+		
+
+
+	#set_global_flag = x
+	oob = "RAJ_1939"
+
+	set_technology = {
+	#INFANTRY TECH:
+		support_weapons = 1
+		support_weapons2 = 1
+	    infantry_weapons = 1
+	    infantry_weapons1 = 1		
+		infantry_weapons2 = 1	
+		motorised_infantry = 1
+		armored_car1 = 1
+		armored_car2 = 1
+		marines = 1
+		tech_mountaineers = 1
+		paratroopers = 1
+		tech_special_forces = 1
+		mechanised_infantry = 1
+	#SUPPORT TECH:
+	    tech_support = 1	
+	    tech_recon = 1
+	    tech_support = 1	
+        tech_field_hospital	= 1		
+	    tech_engineers = 1	
+	    tech_logistics_company = 1	
+	    tech_military_police = 1
+        tech_signal_company	= 1
+	    tech_maintenance_company = 1
+	#TANK TECH:		
+	    gwtank = 1	
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+		improved_light_tank = 1		
+	#ARTILLERY TECH:		
+	    gw_artillery = 1	
+		interwar_artillery = 1
+		artillery1 = 1
+		artillery2 = 1
+		interwar_antiair = 1
+		antiair1 = 1
+		antiair2 = 1
+		interwar_antitank = 1
+		antitank1 = 1
+		antitank2 = 1
+	#ARMY DOCTRINE TECH:   
+		superior_firepower = 1
+	#NAVAL TECH:  		
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1 
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		basic_secondary_battery = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1		
+        improved_depth_charges = 1
+        smoke_generator = 1
+        improved_sonar = 1
+        damage_control_1 = 1
+        fire_control_methods_1	= 1			
+	#NAVY DOCTRINE TECH: 
+		base_strike = 1
+	#AIR TECH: 			
+	    early_fighter = 1
+	    cv_early_fighter = 1
+		fighter1 = 1
+		cv_fighter1 = 1
+        naval_bomber1 = 1
+	    cv_naval_bomber1 = 1
+		CAS1 = 1
+	    cv_CAS1 = 1
+		early_bomber = 1
+		heavy_fighter1 = 1
+		tactical_bomber1 = 1
+		strategic_bomber1 = 1
+	#AIR DOCTRINE TECH: 
+		air_superiority = 1
+    #ELECTRONICS TECH: 
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_fire_control_system = 1
+    #INDUSTRY: 
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		excavation1 = 1
+		excavation2 = 1
+
+	}
+}

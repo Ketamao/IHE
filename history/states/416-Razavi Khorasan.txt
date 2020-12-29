@@ -1,0 +1,27 @@
+
+state={
+	id=416
+	name="STATE_416"
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			5029 1 
+		}
+		add_core_of = SWI
+
+	}
+
+	provinces={
+		1521 1957 2000 4580 5029 7573 7602 8093 10351 10385 10768 11671 12818 
+	}
+	manpower=1059739
+	buildings_max_level_factor=1.000
+	state_category=rural
+	impassable = yes
+}

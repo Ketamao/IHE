@@ -1,0 +1,88 @@
+﻿air_wings = {
+	
+	330 = {
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+				
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+		fighter_equipment_2 =  {		
+				owner = "MON" 
+				amount = 100
+				creator = "USA"
+								
+			}
+            start_experience_factor = 0.3				
+	}
+}

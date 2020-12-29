@@ -1,0 +1,28 @@
+
+state={
+	id=802
+	name="STATE_802"
+
+	history={
+		owner = ETH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = ETH
+		add_core_of IEA 
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		4995 7980 10775 12714 12757 12812 13307 13308 13309 13314 13315 13316 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

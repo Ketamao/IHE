@@ -1,0 +1,28 @@
+
+state={
+	id=665
+	name="STATE_665"
+
+	history={
+		owner = FRA
+		victory_points = {
+			7005 1 
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+		1938.10.25 = {
+			owner = SWI
+
+		}
+
+	}
+
+	provinces={
+		1105 3987 4992 7005 9983 10082 11957 12000 13145 13179 13300 
+	}
+	manpower=427824
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

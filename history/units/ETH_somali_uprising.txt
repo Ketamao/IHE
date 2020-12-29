@@ -1,0 +1,74 @@
+division_template = {
+	name = "Resistance"
+		is_locked = no
+		regiments = {
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+			infantry = { x = 2 y = 3 }
+			infantry = { x = 2 y = 4 }
+					
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 1 y = 3 }
+			infantry = { x = 1 y = 4 }
+		}
+	}
+units = {
+	######## Rebelion Bois ########
+	division = { # 
+		division_name = {
+				is_name_ordered = no
+		}
+		location = 4995   
+		division_template = "Resistance" 
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # 
+		division_name = {
+				is_name_ordered = no
+		}
+		location = 4995
+		division_template = "Resistance" 
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # 
+		division_name = {
+				is_name_ordered = no
+		}
+		location = 12757
+		division_template = "Resistance" 
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # 
+		division_name = {
+				is_name_ordered = no
+		}
+		location = 12757
+		division_template = "Resistance" 
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # 
+		division_name = {
+				is_name_ordered = no
+		}
+		location = 12812
+		division_template = "Resistance" 
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = { # 
+		division_name = {
+				is_name_ordered = no
+		}
+		location = 12812
+		division_template = "Resistance" 
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+}

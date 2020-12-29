@@ -1,0 +1,18 @@
+state={
+	id=813
+	name="STATE_813"
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 1
+		}
+	}
+
+	
+	provinces={
+	13334
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+}

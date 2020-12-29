@@ -1,0 +1,198 @@
+spriteTypes = {
+
+	### Aussies ###
+
+	SpriteType = {
+		name = "GFX_SAF_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_F0.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_F1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_F2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_F3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_F0_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_F1_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_F2_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/NOR_F3_CV.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_SAF_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/NZL_CAS1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/CAN_CAS1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/NZL_CAS2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/ENG_CAS3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_SAF_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_NAV1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_NAV2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_NAV3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_NAV1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_NAV2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_NAV3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_SAF_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_HF1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SAF_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_HF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_HF3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_SAF_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_TAC0.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_TAC1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_TAC2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_TAC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SAF_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_HB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_HB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_HB3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_SAF_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_SP1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_SP2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETF2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/AST_JETB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SAF_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_JETHB.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_SAF_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/SAF_T.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SAF_rocket_interceptor_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SAF_rocket_interceptor_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SAF_rocket_interceptor_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI3.dds"
+	}	
+
+}

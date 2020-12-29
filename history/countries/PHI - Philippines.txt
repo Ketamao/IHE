@@ -1,0 +1,296 @@
+﻿capital = 327
+
+oob = "PHI_1936"
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	superior_firepower = 1	
+	mtg_transport = 1	
+	trade_interdiction = 1	
+	radio_detection = 1	
+    decimetric_radar = 1	
+	interwar_antiair = 1	
+}
+
+add_ideas = {
+       training_spirit
+       PHI_depression
+       PHI_linguistics
+	   PHI_independence
+	   Lacking_military_expenses
+	   PHI_nogun
+	   PHI_landlords
+	   PHI_economi
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 82
+	fascism = 9
+	communism = 9
+}
+
+create_country_leader = {
+	name = "Manuel Luis Quezón"
+	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
+	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		stout_defender
+	}
+}
+
+create_country_leader = {
+	name = "Pedro P. Baguisa"
+	desc = "POLITICS_PEDRO_BAGUISA_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Leslie Morshead"
+	gfx = "GFX_AST_leslie_morshead"
+	traits = { desert_fox infantry_leader }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Thomas Blamey"
+	gfx = "GFX_AST_thomas_blamey"
+	traits = { jungle_rat hill_fighter inflexible_strategist }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Henry Wynter"
+	gfx = "GFX_AST_henry_wynter"
+	traits = { organizer infantry_leader jungle_rat naval_invader commando }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Alan Vasey"
+	gfx = "GFX_AST_alan_vasey"
+	traits = { infantry_leader trait_engineer trait_mountaineer }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 6
+    planning_skill = 4
+    logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Horace Robertson"
+	gfx = "GFX_AST_horace_robertson"
+	traits = { desert_fox panzer_Leader trickster cavalry_officer }
+	skill = 5
+    attack_skill = 6
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 4
+}
+create_corps_commander = {
+	name = "John Northcott"
+	gfx = "GFX_AST_john_northcott"
+	traits = { armor_officer panzer_leader organizer trait_reckless }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_navy_leader = {
+	name = "Harold Farncomb"
+	gfx = "GFX_AST_harold_farncomb"
+	traits = { aviation_enthusiast naval_lineage }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Victor Crutchley"
+	gfx = "GFX_AST_victor_crutchley"
+	traits = { bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+1939.1.1 = {
+
+	add_political_power = 1050
+	
+	#IDEAS
+	add_ideas = {
+        ###
+	}
+	remove_ideas = {
+		###
+	}
+
+	#FOCUSES
+    complete_national_focus = PHI_nationbuilding
+    complete_national_focus = PHI_economic_independence
+    complete_national_focus = PHI_national_economic_council 
+    complete_national_focus = PHI_fight_the_depression
+    complete_national_focus = PHI_perfection_of_democratic_institutions
+    complete_national_focus = PHI_national_language_institute
+    complete_national_focus = PHI_national_council_of_education
+    complete_national_focus = PHI_promotion_of_the_local_capital
+    complete_national_focus = PHI_colonization_of_mindanao
+    complete_national_focus = PHI_improvement_of_transport
+    complete_national_focus = PHI_department_of_national_defense
+    complete_national_focus = PHI_establish_the_army_of_the_philippines
+    complete_national_focus = PHI_police_reform
+    complete_national_focus = PHI_active_duty_component
+    complete_national_focus = PHI_basic_military_infrastructure
+    complete_national_focus = PHI_refurbish_us_army_infrastructure
+    complete_national_focus = PHI_nationaldefense_act
+    complete_national_focus = PHI_reserve_component
+    complete_national_focus = PHI_independent_philippine_constabulary
+    complete_national_focus = PHI_philippine_army_air_corps
+    complete_national_focus = PHI_offshore_patrol	
+	unlock_national_focus = 
+
+	#set_global_flag = x
+	oob = "PHI_1939"
+
+	set_technology = {
+	#INFANTRY TECH:
+		support_weapons = 1
+		support_weapons2 = 1
+	    infantry_weapons = 1
+	    infantry_weapons1 = 1		
+		infantry_weapons2 = 1	
+		motorised_infantry = 1
+		armored_car1 = 1
+		armored_car2 = 1
+		marines = 1
+		tech_mountaineers = 1
+		paratroopers = 1
+		tech_special_forces = 1
+	#SUPPORT TECH:
+	    tech_support = 1	
+	    tech_recon = 1
+	    tech_support = 1	
+        tech_field_hospital	= 1		
+	    tech_engineers = 1	
+	    tech_logistics_company = 1	
+	    tech_military_police = 1
+        tech_signal_company	= 1
+	    tech_maintenance_company = 1
+	#TANK TECH:		
+	    gwtank = 1	
+		basic_light_tank = 1
+		basic_heavy_tank = 1	
+		improved_light_tank = 1		
+	#ARTILLERY TECH:		
+	    gw_artillery = 1	
+		interwar_artillery = 1
+		artillery1 = 1
+		artillery2 = 1
+		interwar_antiair = 1
+		antiair1 = 1
+		antiair2 = 1
+		interwar_antitank = 1
+		antitank1 = 1
+		antitank2 = 1
+	#ARMY DOCTRINE TECH:   
+		superior_firepower = 1
+	#NAVAL TECH:  		
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1 
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		basic_secondary_battery = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1		
+	#NAVY DOCTRINE TECH: 
+		base_strike = 1
+	#AIR TECH: 			
+	    early_fighter = 1
+	    cv_early_fighter = 1
+		fighter1 = 1
+		cv_fighter1 = 1
+        naval_bomber1 = 1
+	    cv_naval_bomber1 = 1
+		CAS1 = 1
+	    cv_CAS1 = 1
+		early_bomber = 1
+		heavy_fighter1 = 1
+		tactical_bomber1 = 1
+		strategic_bomber1 = 1
+	#AIR DOCTRINE TECH: 
+		air_superiority = 1
+    #ELECTRONICS TECH: 
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_fire_control_system = 1
+    #INDUSTRY: 
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		excavation1 = 1
+		excavation2 = 1
+
+	}
+}

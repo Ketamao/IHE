@@ -1,0 +1,96 @@
+﻿air_wings = {
+	653 = {
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3	
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3
+		fighter_equipment_2 =  {		
+				owner = "SOV" 
+				amount = 100
+				creator = "SWI"
+								
+			}
+			start_experience_factor = 0.3			
+			
+	}
+}

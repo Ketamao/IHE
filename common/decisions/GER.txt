@@ -1,0 +1,856 @@
+#Category only allowed for GER
+
+GER_mefo_bills_category = {
+
+	GER_mefo_bills_mission = {
+
+		allowed = { always = no
+			original_tag = GER }
+
+		icon = ger_mefo_bills
+
+		available = {
+			NOT = { has_government = democratic }
+			GER_can_delay_mefo_payment = yes
+			has_political_power > 0
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		selectable_mission = yes
+		days_mission_timeout = 180
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					NOT = { GER_has_mefo_bills = yes }
+					has_idea = GER_mefo_bills_ended
+				}
+			}
+		}
+
+		days_remove = GER_extend_mefo_bills_days?0
+		remove_effect = {
+			GER_mefo_bills_level_up = yes
+			if = {
+				limit = {
+					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = GER_mefo_bill_counter value = 10 }
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = GER_mefo_bills_mission
+			}
+		}
+
+		complete_effect = {                                                                                                                          
+			custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			effect_tooltip = {
+				GER_mefo_bills_level_up = yes
+			}
+			hidden_effect = {
+				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+			}
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			hidden_effect = {
+				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+			}
+			GER_mefo_bills_level_up = yes
+			if = {
+				limit = {
+					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = GER_mefo_bill_counter value = 10 }
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = GER_mefo_bills_mission
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+operations = {
+
+	GER_barbarossa_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			original_tag = GER
+			#added through on_action
+		}
+
+		available = {
+			219 = { is_controlled_by_ROOT_or_ally = yes }
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+			202 = { is_controlled_by_ROOT_or_ally = yes }
+			217 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	GER_Summer_offensive_1 = {
+		
+		icon = generic_operation
+		
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+			original_tag = GER
+			always = yes
+		}
+		fire_only_once = yes
+		
+		is_good = no
+
+		available = {
+			NOT = {has_idea = summer_offensive}
+			AND	= { date > 1941.6.22
+			date < 1941.9.30
+			}
+		}
+		days_mission_timeout = 30
+		activation = {
+			date > 1941.5.22
+		}
+		complete_effect = {
+			GER = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+				hidden_effect = {
+					country_event = { days = 100 id = germany.1001 }
+				}
+			}
+			ITA = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			ROM = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			HUN = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			FIN = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			SPR = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			BUL = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			IEA = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			SOV = {
+				add_timed_idea = { 
+					idea = airforce_crushed
+					days = 100
+				}
+			}
+			MON = {
+				add_timed_idea = { 
+					idea = airforce_crushed
+					days = 100
+				}
+			}			
+		}
+	}
+	GER_Summer_offensive_2 = {
+		
+		icon = generic_operation
+		
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+			original_tag = GER
+			always = yes
+		}
+		fire_only_once = yes
+		
+		is_good = no
+		
+		available = {
+			NOT = {has_idea = summer_offensive}
+			AND	= {date > 1942.6.22
+			date < 1942.9.30
+			}
+		}
+		days_mission_timeout = 30
+		activation = {
+			date > 1942.5.22
+		}
+		complete_effect = {
+			GER = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+				hidden_effect = {
+					country_event = { days = 100 id = germany.1001 }
+				}
+			}
+			ITA = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			ROM = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			HUN = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			FIN = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			SPR = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			BUL = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			IEA = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			SOV = {
+				add_timed_idea = { 
+					idea = airforce_suppressed
+					days = 100
+				}
+			}
+			MON = {
+				add_timed_idea = { 
+					idea = airforce_suppressed
+					days = 100
+				}
+			}
+			hidden_effect = {
+				GER = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				ITA = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				ROM = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				HUN = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				BUL = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				SPR = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				IEA = {
+					remove_ideas = german_summer_offensive_halved
+				}
+			}
+		}
+	}
+	GER_last_major_offensive ={
+		
+		icon = generic_operation
+		
+		allowed = {
+			original_tag = GER
+		}
+		visible = {
+			original_tag = GER
+			always = yes
+		}
+		fire_only_once = yes
+		
+		is_good = no
+
+		available = {
+			NOT = {has_idea = summer_offensive}
+			AND = {date > 1943.6.22 date < 1943.9.30
+			}
+		}
+		days_mission_timeout = 30
+		activation = {
+			date > 1943.5.22
+		}
+		complete_effect = {
+			GER = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			ITA = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			ROM = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			HUN = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			FIN = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			SPR = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			BUL = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			IEA = {
+				add_timed_idea = { 
+					idea = summer_offensive
+					days = 100
+				}
+			}
+			SOV = {
+				add_timed_idea = { 
+					idea = airforce_suppressed
+					days = 100
+				}
+			}
+			MON = {
+				add_timed_idea = { 
+					idea = airforce_suppressed
+					days = 100
+				}
+			}
+			hidden_effect = {
+				GER = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				ITA = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				ROM = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				HUN = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				BUL = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				SPR = {
+					remove_ideas = german_summer_offensive_halved
+				}
+				IEA = {
+					remove_ideas = german_summer_offensive_halved
+				}
+			}
+		}	
+	}
+}
+
+#Category only allowed for GER
+GER_military_buildup = {
+
+	GER_annex_VIC = { 
+				available = {
+					always = yes
+					FRA = { has_capitulated = yes }
+					NOT = { ENG = { has_completed_focus = ireland_focus }}
+				}
+					
+				allowed = { 
+					tag = GER
+				}
+				visible = { 
+					always = yes
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						GER = {
+							transfer_state = 21
+							transfer_state = 32
+							transfer_state = 20
+							transfer_state = 22
+							transfer_state = 31
+							transfer_state = 25
+							transfer_state = 33
+							transfer_state = 26
+						}
+					}
+				}
+	Ger_annex_VIC_mission = {
+
+		icon = jap_conquer_china
+
+		visible = {
+			ENG = { has_completed_focus = ireland_focus }
+		}
+		
+		available = {
+			NOT = { country_exists = FIN }
+		}
+
+		fire_only_once = yes
+		
+
+		activation = {
+			ENG = { has_completed_focus = ireland_focus }
+		}
+
+		days_mission_timeout = 140
+		#days_remove = 1
+
+		timeout_effect = {
+			GER = {
+							transfer_state = 21
+							transfer_state = 32
+							transfer_state = 20
+							transfer_state = 22
+							transfer_state = 31
+							transfer_state = 25
+							transfer_state = 33
+							transfer_state = 26
+						}	
+		}
+	}			
+
+	GER_annex_HUN = { 
+	
+				available = {
+					HUN = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = GER
+				}
+				visible = { 
+					country_exists = HUN
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = HUN
+								transfer_troops = yes
+						}
+					}
+				}
+				
+	GER_annex_BUL = { 
+	
+				available = {
+					BUL = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = GER
+				}
+				visible = { 
+					country_exists = BUL
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = BUL
+								transfer_troops = yes
+						}
+					}
+				}				
+				
+				GER_annex_ROM = { 
+	
+				available = {
+					ROM = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = GER
+				}
+				visible = { 
+					country_exists = ROM
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = ROM
+								transfer_troops = yes
+						}
+					}
+				}
+				
+				GER_annex_ITA = { 
+	
+				available = {
+					ITA = { is_ai = yes }
+					GER = { has_completed_focus = GER_danzig_or_war }
+				}
+					
+				allowed = { 
+					tag = GER
+				}
+				visible = { 
+					country_exists = ITA
+				}
+				
+					fire_only_once = yes
+					
+					cost = 0 
+					
+					complete_effect = {
+						annex_country = {
+								target = ITA
+								transfer_troops = yes
+						}
+					}
+				}
+}
+
+
+special_projects = {
+	GER_dismantle_maginot = {
+
+		icon = generic_construction
+
+			allowed = { 
+		original_tag = GeR
+		}
+		
+		available = {
+			#has_war = yes
+			controls_state = 28
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			controls_state = 28
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+		}
+		complete_effect = {
+					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+	
+		}
+	}	
+	GER_dismantle_czechoslovakian_forts = {
+
+		icon = generic_construction
+		
+		allowed = { 
+		original_tag = GeR
+		}
+
+		available = {
+			#has_war = yes
+			controls_state = 69 # Sudetenland
+			controls_state = 74 # Eastern Sudetenland
+			controls_state = 9 # Bohemia
+			controls_state = 75 # Moravia
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			controls_state = 69 # Sudetenland
+			controls_state = 74 # Eastern Sudetenland
+			controls_state = 9 # Bohemia
+			controls_state = 75 # Moravia
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			69 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			74 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			9 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			75 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					72 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					71 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				72 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+				71 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					70 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				70 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					73 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					664 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				73 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+				664 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+		}
+	}	
+}

@@ -1,0 +1,18 @@
+﻿air_wings = {
+	
+	605 = {
+		fighter_equipment_2 =  {		
+				owner = "CHI" 
+				amount = 100
+			}
+			name = "Flying Tigers"
+			start_experience_factor = 0.9
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="support_unique"
+			name="Claire Lee"
+			surname="Chennaultv"
+			callsign="Tiger"
+			portrait=1 
+		}
+	}
+}

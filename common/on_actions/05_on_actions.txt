@@ -1,0 +1,270 @@
+on_actions = {
+	on_startup = {
+		effect = { 
+			PER = {
+				give_resource_rights = { receiver = ENG state = 412 }
+				give_resource_rights = { receiver = ENG state = 413 }
+				give_resource_rights = { receiver = ENG state = 411 }
+			}
+			IRQ = { 
+				give_resource_rights = { receiver = ENG state = 676 }
+				give_resource_rights = { receiver = ENG state = 291 }
+			}
+			HOL = { 
+				give_resource_rights = { receiver = ENG state = 309 }
+			}
+			POL = {
+				country_lock_all_division_template = yes
+			}
+			119 = {
+				add_dynamic_modifier = {
+					modifier = no_dday_before_1942
+				}
+			}
+			118 = {
+				add_dynamic_modifier = {
+					modifier = no_dday_before_1942
+				}
+			}
+			FRA = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			GER = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			BEL = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			HOL = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			ENG = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			ITA = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			POL = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			NOR = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			DEN = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			SWE = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			FIN = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			SOV = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			MON = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			CHI = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			JAP = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			RAJ = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			MAN = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			NEP = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			USA = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			SPR = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			CAN = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			GRE = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			YUG = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			MEX = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			BRA = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			IEA = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			ROM = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			HUN = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			BUL = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			PER = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			AST = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			NZL = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			PHI = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			SIA = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+			SAF = {
+				add_ideas = ENG_airport_aa_bonus
+			}
+		}
+	}
+	
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					date < 1941.6.22
+					date > 1941.9.30
+					tag = GER
+					has_idea = summer_offensive
+				}
+				remove_idea = summer_offensive
+			}
+			if = {
+				limit = {
+					date < 1942.6.22
+					date > 1942.9.30
+					tag = GER
+					has_idea = summer_offensive
+				}
+				remove_idea = summer_offensive
+			}
+			if = {
+				limit = {
+					date < 1943.6.22
+					date > 1943.9.30
+					tag = GER
+					has_idea = summer_offensive
+				}
+				remove_idea = summer_offensive
+			}
+		}
+	}
+	
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+						original_tag = ETH
+						NOT = { has_global_flag = eth_cap}
+				}
+				IEA = { 
+					annex_country = {
+						target = ETH
+					}
+					add_ideas = IEA_Arbegnoch
+				}
+				271 = {
+					add_dynamic_modifier = {
+						modifier = ethopian_ressitance_state
+					}
+				}
+				805 = {
+					add_dynamic_modifier = {
+						modifier = ethopian_ressitance_state
+					}
+				}
+				804 = {
+					add_dynamic_modifier = {
+						modifier = ethopian_ressitance_state
+					}
+				}
+				802 = {
+					add_dynamic_modifier = {
+						modifier = ethopian_ressitance_state
+					}
+				}
+				add_named_threat = {
+					threat = 1 name = ethopia_caput
+				}
+				set_global_flag = eth_cap
+			}
+			if = {
+				limit = {
+					original_tag = POL 
+				}
+				POL = {
+					remove_ideas = POL_knife_in_the_back
+				}
+			}
+			if = {
+				limit = {
+						original_tag = FRA
+						NOT = { has_global_flag = france_has_capped}
+				}
+				ITA = { 
+					transfer_state = 735
+				}
+				SWI = {
+					transfer_state = 20
+					transfer_state = 21
+					transfer_state = 22
+					transfer_state = 32
+					transfer_state = 31
+					transfer_state = 25
+					transfer_state = 33
+					transfer_state = 26
+				}
+				set_global_flag = france_has_capped
+				add_named_threat = { threat = 25 name = Fall_of_france }
+			}
+		}
+	}
+	
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = IEA
+					has_war_with = ENG
+					NOT = { has_global_flag = ethpoian_revolt_is_on_the_way] }
+				}
+				IEA = {
+					add_timed_idea = { idea = IEA_ethopian_uprising_on_the_way  days = 201 }
+				}
+				set_global_flag = ethpoian_revolt_is_on_the_way
+			}
+			if = {
+				limit = {
+					tag = JAP
+					has_war_with = CHI
+				}
+				add_named_threat = { threat = 8 name = china_war}
+			}
+			if = {
+				limit = {
+					tag = GER
+					has_war_with = POL
+				}
+				SOV = {
+					country_event = { id = soviet.200 days = 30 }
+				}
+			}
+		}
+	}
+}

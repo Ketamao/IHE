@@ -1,0 +1,32 @@
+
+state={
+	id=13
+	name="STATE_13"
+	manpower = 730660
+	resources={
+		steel=2 # was: 3
+	}
+	state_category = metropolis
+	history={
+		owner = SWI
+		victory_points = {
+			3152 20
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 7
+			dockyard = 3
+			air_base = 2
+			3152 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = SWI
+	}
+
+	provinces={
+		83 185 308 496 567 3074 3152 3174 6201 6381 9079 11127 11291 11426 
+	}
+}

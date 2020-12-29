@@ -1,0 +1,511 @@
+ideas = {
+
+    country = {
+		PHI_depression = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_speed_buildings_factor = -0.10			
+				consumer_goods_factor = 0.25				
+			}
+		}
+		
+		PHI_nogun = {
+			picture = noguns
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+                artillery = -0.50
+				infantry_weapons -0.50
+				armor = -0.50
+			}
+		}		
+		
+		PHI_linguistics = {
+			picture = linguistics
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {		
+				political_power_cost = 0.35			
+			}
+		}
+
+		PHI_independence = {
+		
+			picture = independence
+			
+			allowed = {
+				original_tag = PHI
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			MONTHLY_POPULATION = 1
+				autonomy_gain = 0.5
+			}
+		}
+		
+		PHI_landlords = {
+		
+			picture = gre_schachtplan2
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.1
+			}
+		}		
+		
+		PHI_economi = {
+		
+			picture = pheco
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					trade_laws_cost_factor = 5
+					economy_cost_factor = 5
+			}
+		}
+		
+		PHI_amermoney = {
+		
+			picture = independence
+			
+			allowed = {
+				original_tag = PHI
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+                research_speed_factor = 0.10
+               	production_speed_buildings_factor = 0.10				
+			}
+		}
+
+		PHI_AF = {
+		
+			picture = usaaf	
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				air_doctrine = 0.5
+			}
+		}		
+		
+    }
+	
+	political_advisor = {
+
+		PHI_sergio_osmena = {
+
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		PHI_emilio_aguinaldo = {
+
+			picture = generic_political_advisor_asia_3
+				
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		PHI_juan_sumulong = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}	
+
+	army_chief = {
+		
+		PHI_leoncio_s_tan = {
+			
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+		PHI_basilio_j_valdez = {
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	air_chief = {
+		
+
+		PHI_pelagio_cruz = {
+			
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		PHI_edwin_andrews = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+		
+
+		PHI_santiago_nuval = {
+			
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = PHI
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		PHI_eustacio_orobia = {
+			
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = PHI
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		PHI_vicente_p_lim = {
+            ledger = army
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		PHI_heraclio_alano = {
+            ledger = army
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PHI_basilio_fernando = {
+            ledger = army
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PHI_jose_v_andrada = {
+            ledger = navy
+			picture = generic_navy_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		harland_wolff_p = {
+			picture = harland_wolff
+			allowed = {
+				original_TAG = PHI
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+		
+		john_brown_company_p = {
+			picture = john_brown_company
+			allowed = {
+				original_TAG = PHI
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+		}	
+	}
+	
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		PHI_american_mexican_tanks = {
+
+			picture = chrysler
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		PHI_marmon_herrington = {
+			picture = marmon_herrington
+			
+			allowed = {
+				original_tag = PHI
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { pacific_light_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		PHI_ford_tank_department = {
+			picture = ford_motor_company
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}			
+	}
+
+	theorist = {
+		PHI_benito_n_ebuen = {
+            ledger = army
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		PHI_ramon_a_alcaraz = { 
+            ledger = air
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		PHI_victor_h_dizon = {
+            ledger = navy
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+
+}

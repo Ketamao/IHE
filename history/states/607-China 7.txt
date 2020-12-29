@@ -1,0 +1,32 @@
+
+state={
+	id=607
+	name="STATE_607"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			9958 1 
+		}
+		1938.10.25 = {
+			buildings = {
+				air_base = 2
+			}
+
+		}
+
+	}
+
+	provinces={
+		1603 4009 4158 4519 4547 7126 7459 7508 7540 7568 7580 9937 10079 10434 10446 10462 12012 12426 
+	}
+	manpower=34289800
+	buildings_max_level_factor=1.000
+	state_category=town
+}

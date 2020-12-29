@@ -1,0 +1,219 @@
+
+units = {
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Tanks"
+		location = 1278
+		division_template = "Guards Tanks Div"
+		start_experience_factor = 0.8
+	}	
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Guards Rifles"
+		location = 11111
+		division_template = "Guards Motor Rifle Division"
+		start_experience_factor = 0.8
+	}	
+}

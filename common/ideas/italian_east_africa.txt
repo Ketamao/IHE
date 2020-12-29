@@ -1,0 +1,791 @@
+ideas = {
+	country = {
+		IEA_ethopian_uprising_on_the_way = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = 10
+				resistance_activity = 0.5
+			}
+		}
+		IEA_conscription = {
+
+			picture = SAF_native_service
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.10
+			}
+		}
+		IEA_Arbegnoch = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = 0.25
+				resistance_target = 0.90
+				required_garrison_factor = 0.25
+				resistance_activity = -0.10
+				resistance_garrison_penetration_chance = 0.10
+			}
+		}
+		IEA_Arbegnoch_II = {
+
+			picture = chi_war_of_resistance3
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = 0.80
+				required_garrison_factor = 0.20
+				resistance_activity = -0.20
+			}
+		}
+		IEA_Arbegnoch_III = {
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = -0.25
+				resistance_target = 0.70
+				required_garrison_factor = 0.10
+				resistance_activity = -0.30
+				resistance_garrison_penetration_chance -0.25
+			}
+		}
+		IEA_Arbegnoch_IV = {
+
+			picture = chi_war_of_resistance
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = -0.50
+				resistance_target = 0.60
+				resistance_activity = -0.40
+				resistance_garrison_penetration_chance = -0.50
+			}
+		}
+		IEA_workforce = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		IEA_unwelcomed_occupant = {
+
+			picture = vittoria_mutilata
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.50
+			}
+		}
+		IEA_collaboration_movements = {
+
+			picture = vittoria_mutilata
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.10
+			}
+		}
+		IEA_army_of_the_butcher_idea = {
+
+			picture = german_advisors
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				offence = 0.15
+			}
+		}
+		IEA_Italian_funds = {
+
+			picture = golden_reserve
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				political_power_gain = -0.50
+			}
+		}
+		IEA_stable_budget = {
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+			original_tag = IEA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		
+	}
+		political_advisor = {
+
+		ITA_giovanni_marinelli1 = {
+						
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_political_advisor_europe_5
+						
+			traits = { prince_of_terror }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ITA_gian_galeazzo_ciano1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_political_advisor_europe_6
+						
+			traits = { compassionate_gentleman }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		ITA_roberto_farinacci1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_army_europe_1
+						
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		ITA_dino_grandi1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_political_advisor_europe_3
+						
+			traits = { smooth_talking_charmer }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+			
+		ITA_serafino_mazzolini1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_political_advisor_europe_1
+						
+			traits = { ideological_crusader }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+					
+		ITA_giacomo_acerbo1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_political_advisor_europe_2
+						
+			traits = { war_industrialist }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 3
+			}
+		}
+					
+		ITA_junio_valerio_borghese1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_army_europe_2
+						
+			traits = { armaments_organizer }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+					
+		ITA_luigi_einaudi1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_political_advisor_europe_1
+						
+			traits = { captain_of_industry }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 3
+			}
+		}
+					
+		ITA_paolo_thaon_di_revel1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+
+			picture = generic_navy_europe_3
+						
+			traits = { quartermaster_general }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 0.3
+			}
+		}
+	}
+		
+	# MILITARY
+	army_chief = {
+		
+		
+		pincoballs1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { army_cavalry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pincoballs2 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { army_chief_morale_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pincoballs3 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pincoballs4 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	navy_chief = {
+		
+		domenico_cavagnari1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_1 }
+			# REVISIT Old Guard to represent hesitance for necessary reforms
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		arturo_riccardi1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		inigo_campioni1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	air_chief = {
+		
+		
+		italo_balbo1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rino_corso_fougier1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { air_air_combat_training_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		francesco_pricolo1 = {
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}	
+
+	tank_manufacturer = {
+	
+		designer = yes		
+	
+		IEA_fiat = {
+			picture = fiat
+			allowed = {
+				original_tag = IEA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tankette_manufacturer }
+		}
+		
+		IEA_Ansaldo = {
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+		}
+		
+		IEA_Fiat-Ansaldo = {
+			picture = fiat
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { assault_gun_manufacturer }
+		}		
+		
+	}
+	
+	high_command = {
+	
+		pietro_gazzera = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { army_regrouping_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		alfredo_guzzoni1 = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}	
+		
+		ettore_muti1 = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		marziale_cerutti1 = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		silvio_scaroni1 = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		alberto_da_zara1 = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		carlo_bergamini1 = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		luigi_mascherpa1 = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = IEA
+			}
+			
+
+			
+			traits = { navy_naval_air_defense_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	theorist = {	
+		rodolfo_graziani1 = {
+			ledger = army
+						
+			allowed = {
+				original_tag = IEA
+			}
+			
+			cost = 250
+						
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		
+			traits = { military_theorist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+	}
+}

@@ -1,0 +1,198 @@
+spriteTypes = {
+
+	### Soviets ###
+
+	SpriteType = {
+		name = "GFX_GER_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F0.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F0_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F1_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F2_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_F3_CV.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_GER_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_CAS1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_CAS1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_CAS2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_CAS3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_GER_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_NAV1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_NAV2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_NAV3.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_NAV1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_NAV2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_NAV3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_GER_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_HF1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_HF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_HF3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_GER_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_TAC0.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_TAC1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_TAC2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_TAC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_HB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_HB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_HB3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_GER_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_SP1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_SP2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_JETF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_JETF2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_JETMB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_JETMB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_JETHB.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_GER_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_T.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_rocket_interceptor_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_RI1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_rocket_interceptor_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_GER_rocket_interceptor_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/planes/GER_RI3.dds"
+	}	
+
+}

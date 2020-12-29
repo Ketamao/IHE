@@ -1,0 +1,16 @@
+
+state={
+	id=509
+	name="STATE_509" # Chaco Australis
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = SWI
+
+	}
+
+	provinces={
+		2106 2208 5143 5213 8169 8255 10944 10965 10986 12922 12943 
+	}
+}

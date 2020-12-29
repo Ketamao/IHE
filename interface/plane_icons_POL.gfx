@@ -1,0 +1,198 @@
+spriteTypes = {
+
+	### POLgium ###
+
+	SpriteType = {
+		name = "GFX_POL_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F0.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F3.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F0_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_cv_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F1_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_cv_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F2_CV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_cv_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_F3_CV.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_POL_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_CAS1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_CAS1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_CAS1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_CAS2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_CAS2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/planes/MON_CAS3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_POL_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_NAV1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_NAV2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_NAV3.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/HOL_NAV1_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_NAV2_CV.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_cv_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_NAV3_CV.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_POL_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_HF1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_POL_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_HF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_HF3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_POL_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_TAC0.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_TAC1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_TAC2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_TAC3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_POL_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_HB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_HB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_HB3.dds"
+	}
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_POL_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_SP1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_SP2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_JETF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_JETF2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_JETB1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_JETB2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_JETHB1.dds"
+	}	
+	
+	#
+	
+	SpriteType = {
+		name = "GFX_POL_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/planes/POL_T.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_POL_rocket_interceptor_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_POL_rocket_interceptor_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_POL_rocket_interceptor_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/planes/ALL_RI3.dds"
+	}	
+
+}
